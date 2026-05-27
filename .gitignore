@@ -1,0 +1,13 @@
+# NUNCA commitear credenciales
+credentials/
+*.pem
+*.key
+service-account*.json
+client_secret*.json
+.env
+.env.*
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
