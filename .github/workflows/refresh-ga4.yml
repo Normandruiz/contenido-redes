@@ -1,0 +1,45 @@
+name: Refresh GA4 data
+
+on:
+  schedule:
+    # 10:00 UTC = 07:00 Argentina (UTC-3)
+    # Nota: GitHub Actions schedule puede tener delay de hasta 30-60min en horarios pico
+    - cron: '0 10 * * *'
+  workflow_dispatch:  # permite trigger manual desde la UI
+
+permissions:
+  contents: write  # para commitear el JSON actualizado
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh GA4 data
+        env:
+          GA4_CREDENTIALS_JSON: ${{ secrets.GA4_CREDENTIALS_JSON }}
+        run: python scripts/refresh_ga4_data.py
+
+      - name: Commit and push if changes
+        run: |
+          git config user.email "noma-dashboard-bot@users.noreply.github.com"
+          git config user.name "GA4 Dashboard Bot"
+          git add data/ga4-destinos.json
+          if git diff --cached --quiet; then
+            echo "No hay cambios en GA4 data, skip commit"
+          else
+            git commit -m "chore: refresh GA4 data $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
