@@ -26,6 +26,8 @@ from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import (
     DateRange,
     Dimension,
+    Filter,
+    FilterExpression,
     Metric,
     OrderBy,
     RunReportRequest,
@@ -41,9 +43,23 @@ TREND_TOP_N = 5         # destinos en alza
 TREND_BOTTOM_N = 3      # destinos cayendo
 TREND_MIN_PV = 2        # filtro: destino debe tener al menos N vistas en alguno de los dos periodos
 
+# Evento de conversion (literal el nombre en GA4)
+CONVERSION_EVENT_NAME = "GA4 Clic Botón Buscar"
+
+# Rotacion: penaliza destinos que aparecieron en el top reciente
+ROTATION_LOOKBACK_DAYS = 3   # cuantos dias atras mirar
+ROTATION_PENALTY_TODAY = 0.25  # si aparecio hoy (no deberia pasar en mismo run)
+ROTATION_PENALTY_YESTERDAY = 0.20
+ROTATION_PENALTY_OLDER = 0.10  # 2-3 dias atras
+ROTATION_LOG_KEEP_DAYS = 14  # cuanto historial guardamos en el log
+
+# Threshold para badge "Convierte"
+CONVERSION_BADGE_MIN_EVENTS = 1  # destino con >= N eventos de conversion muestra badge
+
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_CREDS_PATH = ROOT / "credentials" / "noma-viajes-ga4.json"
 OUTPUT_PATH = ROOT / "data" / "ga4-destinos.json"
+ROTATION_LOG_PATH = ROOT / "data" / "recommendations-log.json"
 
 # Matchea:
 #   /vuelos/BUE/cartagena            -> 'cartagena'
@@ -92,6 +108,38 @@ def extract_slug(path: str) -> str | None:
     return match.group(1) if match else None
 
 
+def fetch_conversion_events(client, period_days=PERIOD_DAYS):
+    """Cuenta eventos 'GA4 Clic Botón Buscar' agrupados por pagePath."""
+    event_filter = FilterExpression(
+        filter=Filter(
+            field_name="eventName",
+            string_filter=Filter.StringFilter(
+                value=CONVERSION_EVENT_NAME,
+                match_type=Filter.StringFilter.MatchType.EXACT,
+            ),
+        )
+    )
+    request = RunReportRequest(
+        property=f"properties/{PROPERTY_ID}",
+        date_ranges=[DateRange(start_date=f"{period_days}daysAgo", end_date="today")],
+        dimensions=[Dimension(name="pagePath")],
+        metrics=[Metric(name="eventCount")],
+        dimension_filter=event_filter,
+        limit=10000,
+    )
+    return client.run_report(request)
+
+
+def aggregate_conversions_by_slug(response) -> dict:
+    agg = {}
+    for row in response.rows:
+        slug = extract_slug(row.dimension_values[0].value)
+        if not slug:
+            continue
+        agg[slug] = agg.get(slug, 0) + int(row.metric_values[0].value)
+    return agg
+
+
 def aggregate_by_slug(response) -> dict:
     agg: dict[str, dict] = {}
     for row in response.rows:
@@ -112,7 +160,14 @@ def aggregate_by_slug(response) -> dict:
     return agg
 
 
-def compute_scores(agg: dict) -> list[dict]:
+def compute_scores(agg: dict, rotation_penalties: dict) -> list[dict]:
+    """
+    Formula del score (sin conversion porque el evento no es atribuible por destino):
+      0.35 engagement_time_norm
+      0.35 pageviews_norm
+      0.15 engagement_rate
+      0.15 rotation_factor       (1 - penalty por aparicion reciente)
+    """
     items = []
     for slug, data in agg.items():
         pv = data["pageviews"]
@@ -120,14 +175,12 @@ def compute_scores(agg: dict) -> list[dict]:
             continue
         avg_eng_time = data["engagement_time_total"] / pv
         avg_eng_rate = data["engagement_rate_weighted"] / pv
-        items.append(
-            {
-                "slug": slug,
-                "pageviews": pv,
-                "avg_engagement_time_seconds": round(avg_eng_time, 1),
-                "engagement_rate": round(avg_eng_rate, 3),
-            }
-        )
+        items.append({
+            "slug": slug,
+            "pageviews": pv,
+            "avg_engagement_time_seconds": round(avg_eng_time, 1),
+            "engagement_rate": round(avg_eng_rate, 3),
+        })
 
     if not items:
         return []
@@ -139,10 +192,90 @@ def compute_scores(agg: dict) -> list[dict]:
         pv_norm = i["pageviews"] / max_pv
         et_norm = i["avg_engagement_time_seconds"] / max_et
         er = min(max(i["engagement_rate"], 0), 1)
-        i["score"] = round(pv_norm * 0.4 + et_norm * 0.4 + er * 0.2, 2)
+
+        penalty = rotation_penalties.get(i["slug"], 0)
+        rotation_factor = max(0, 1 - penalty)
+
+        base_score = et_norm * 0.35 + pv_norm * 0.35 + er * 0.15
+        i["score_pre_rotation"] = round(base_score, 3)
+        i["rotation_penalty"] = round(penalty, 3)
+        i["score"] = round(base_score + rotation_factor * 0.15, 2)
 
     items.sort(key=lambda x: x["score"], reverse=True)
     return items
+
+
+def fetch_conversion_total(client, start_days_ago: int, end_days_ago: int = 0) -> int:
+    """Total de eventos 'GA4 Clic Boton Buscar' en una ventana temporal (metrica global)."""
+    event_filter = FilterExpression(
+        filter=Filter(
+            field_name="eventName",
+            string_filter=Filter.StringFilter(
+                value=CONVERSION_EVENT_NAME,
+                match_type=Filter.StringFilter.MatchType.EXACT,
+            ),
+        )
+    )
+    end = "today" if end_days_ago == 0 else f"{end_days_ago}daysAgo"
+    req = RunReportRequest(
+        property=f"properties/{PROPERTY_ID}",
+        date_ranges=[DateRange(start_date=f"{start_days_ago}daysAgo", end_date=end)],
+        metrics=[Metric(name="eventCount")],
+        dimension_filter=event_filter,
+        limit=1,
+    )
+    resp = client.run_report(req)
+    if not resp.rows:
+        return 0
+    return int(resp.rows[0].metric_values[0].value)
+
+
+def load_rotation_log() -> list[dict]:
+    if not ROTATION_LOG_PATH.exists():
+        return []
+    try:
+        data = json.loads(ROTATION_LOG_PATH.read_text(encoding="utf-8"))
+        return data.get("log", [])
+    except Exception:
+        return []
+
+
+def compute_rotation_penalties(log: list[dict]) -> dict:
+    """Devuelve {slug: penalty 0-1} basado en apariciones en los ultimos N dias."""
+    if not log:
+        return {}
+    today = datetime.now(timezone.utc).date()
+    penalties = {}
+    for entry in log:
+        try:
+            entry_date = datetime.fromisoformat(entry["date"]).date()
+        except Exception:
+            continue
+        days_ago = (today - entry_date).days
+        if days_ago < 0 or days_ago > ROTATION_LOOKBACK_DAYS:
+            continue
+        if days_ago == 0:
+            pen = ROTATION_PENALTY_TODAY
+        elif days_ago == 1:
+            pen = ROTATION_PENALTY_YESTERDAY
+        else:
+            pen = ROTATION_PENALTY_OLDER
+        for slug in entry.get("top8", []):
+            # Si aparece multiples veces, usar la mayor penalty
+            penalties[slug] = max(penalties.get(slug, 0), pen)
+    return penalties
+
+
+def save_rotation_log(top8_slugs: list[str], log: list[dict]) -> None:
+    today = datetime.now(timezone.utc).date().isoformat()
+    # Filtrar entrada de hoy si existiera (evita duplicados al re-correr)
+    log = [e for e in log if e.get("date") != today]
+    log.append({"date": today, "top8": top8_slugs})
+    # Trim a ROTATION_LOG_KEEP_DAYS
+    log = log[-ROTATION_LOG_KEEP_DAYS:]
+    out = {"updated_at": datetime.now(timezone.utc).isoformat(), "log": log}
+    ROTATION_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    ROTATION_LOG_PATH.write_text(json.dumps(out, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 # ============================================================
@@ -311,6 +444,13 @@ def save_json(items: list[dict], evolucion: dict) -> None:
         "period_days": PERIOD_DAYS,
         "property_id": PROPERTY_ID,
         "is_mock": False,
+        "conversion_event_name": CONVERSION_EVENT_NAME,
+        "score_formula": {
+            "engagement_time": 0.35,
+            "pageviews": 0.35,
+            "engagement_rate": 0.15,
+            "rotation_factor": 0.15,
+        },
         "destinos": items,
         "evolucion": evolucion,
     }
@@ -327,8 +467,20 @@ def main() -> None:
     print(f"  Recibidas {len(resp.rows)} filas crudas")
     agg = aggregate_by_slug(resp)
     print(f"  Agrupadas en {len(agg)} destinos unicos")
-    items = compute_scores(agg)
+
+    print("Calculando rotacion (lookback {} dias)...".format(ROTATION_LOOKBACK_DAYS))
+    log = load_rotation_log()
+    rotation_penalties = compute_rotation_penalties(log)
+    print(f"  {len(rotation_penalties)} destinos con penalty por aparicion reciente")
+
+    items = compute_scores(agg, rotation_penalties)
     print(f"  {len(items)} destinos rankeados (>= {MIN_PAGEVIEWS} vistas)")
+
+    # Guardar log de recomendaciones (top 8 actual con fotos >= 5 se hace en HTML;
+    # aqui guardamos el top 8 del score crudo para que el script tenga visibilidad)
+    top8 = [i["slug"] for i in items[:8]]
+    save_rotation_log(top8, log)
+    print(f"  Log de rotacion actualizado con top8: {', '.join(top8[:4])}...")
 
     print(f"\nCalculando evolucion (ventana {KPI_WINDOW_DAYS}d vs {KPI_WINDOW_DAYS}d)...")
     daily_resp = fetch_daily_global(client, period_days=max(SPARKLINE_DAYS, KPI_WINDOW_DAYS * 2))
@@ -346,6 +498,16 @@ def main() -> None:
     trending_up = sorted(trends, key=lambda x: x["delta_pct"], reverse=True)[:TREND_TOP_N]
     trending_down = sorted(trends, key=lambda x: x["delta_pct"])[:TREND_BOTTOM_N]
     print(f"  Trending: up={len(trending_up)} down={len(trending_down)}")
+
+    print(f"Calculando conversiones globales '{CONVERSION_EVENT_NAME}' (14d vs 14d)...")
+    conv_actual = fetch_conversion_total(client, KPI_WINDOW_DAYS, 0)
+    conv_anterior = fetch_conversion_total(client, KPI_WINDOW_DAYS * 2, KPI_WINDOW_DAYS)
+    kpis["conversions"] = {
+        "actual": conv_actual,
+        "anterior": conv_anterior,
+        "delta_pct": _delta_pct(conv_actual, conv_anterior),
+    }
+    print(f"  Clics Buscar: {conv_actual} (vs {conv_anterior} anteriores)")
 
     evolucion = {
         "window_days": KPI_WINDOW_DAYS,

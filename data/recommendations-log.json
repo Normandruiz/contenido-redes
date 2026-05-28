@@ -1,0 +1,31 @@
+{
+  "updated_at": "2026-05-28T00:38:30.711035+00:00",
+  "log": [
+    {
+      "date": "2026-05-27",
+      "top8": [
+        "bariloche",
+        "cancun",
+        "paris",
+        "iguazu",
+        "rio-de-janeiro",
+        "roma",
+        "madrid",
+        "amsterdam"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "top8": [
+        "bariloche",
+        "cancun",
+        "paris",
+        "iguazu",
+        "rio-de-janeiro",
+        "santiago",
+        "punta-cana",
+        "roma"
+      ]
+    }
+  ]
+}

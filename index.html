@@ -209,9 +209,12 @@
   .evol-header h2{font-size:1.4rem;font-weight:800;background:linear-gradient(135deg,#10b981,#6366f1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.01em;margin-bottom:0.3rem}
   .evol-header p{font-size:0.82rem;color:var(--text-muted);line-height:1.6}
   .evol-header p strong{color:rgba(255,255,255,0.7);font-weight:600}
-  .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.9rem;margin-bottom:1.2rem}
-  @media(max-width:900px){.kpi-grid{grid-template-columns:repeat(2,1fr)}}
+  .kpi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0.8rem;margin-bottom:1.2rem}
+  @media(max-width:1100px){.kpi-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:700px){.kpi-grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:500px){.kpi-grid{grid-template-columns:1fr}}
+  .kpi-card.conversions{border-color:rgba(236,72,153,0.22)}
+  .kpi-card.conversions .value{background:linear-gradient(135deg,#ec4899,#f9a8d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
   .kpi-card{background:var(--glass);backdrop-filter:blur(24px);border:1px solid var(--glass-border);border-radius:var(--radius);padding:1.2rem 1.3rem;transition:all 0.3s ease}
   .kpi-card:hover{border-color:rgba(99,102,241,0.25);transform:translateY(-2px)}
   .kpi-card .label{font-size:0.62rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted);font-weight:600}
@@ -292,11 +295,12 @@
       <h2>&#127919; Recomendados para hoy</h2>
       <p><span class="pill">GA4-DRIVEN</span>Destinos con mayor engagement en los &uacute;ltimos 28 d&iacute;as <strong>que ya tienen al menos 5 fotos</strong> en stock. Pos&iacute; los 4 primeros como posts y los 4 siguientes como stories.</p>
       <div class="reco-method">
-        <strong>&iquest;C&oacute;mo se eligen?</strong> Cada destino recibe un <em>score</em> combinando 3 se&ntilde;ales reales de GA4 (ventana 28d): <span class="formula">0.4 &middot; vistas + 0.4 &middot; tiempo + 0.2 &middot; engagement_rate</span>. Las 3 m&eacute;tricas se normalizan al rango 0&ndash;1 para que ninguna domine.
+        <strong>&iquest;C&oacute;mo se eligen?</strong> Cada destino recibe un <em>score</em> combinando se&ntilde;ales reales de GA4 (ventana 90d) m&aacute;s un factor de rotaci&oacute;n: <span class="formula">0.35 &middot; tiempo + 0.35 &middot; vistas + 0.15 &middot; engagement + 0.15 &middot; rotaci&oacute;n</span>. Las m&eacute;tricas se normalizan al rango 0&ndash;1. <strong>Rotaci&oacute;n:</strong> destinos posteados en los &uacute;ltimos 3 d&iacute;as reciben penalty (-10% a -25%), as&iacute; nunca recomienda siempre los mismos.
         <div class="legend-inline">
-          <span><span class="pill-num">&#128065; Vistas</span> pageviews totales de la p&aacute;gina del destino</span>
           <span><span class="pill-num">&#9201; Tiempo</span> segundos promedio por vista</span>
-          <span><span class="pill-num">&#128172; Engage</span> % sesiones engaged (no rebotaron)</span>
+          <span><span class="pill-num">&#128065; Vistas</span> pageviews del destino</span>
+          <span><span class="pill-num">&#128172; Engage</span> % sesiones engaged</span>
+          <span><span class="pill-num">&#128260; Rotaci&oacute;n</span> diversificaci&oacute;n autom&aacute;tica</span>
         </div>
       </div>
     </div>
@@ -552,6 +556,7 @@ function renderEvolucion(ga4Data, items) {
     buildKpiCard('Sesiones', k.sessions, v => formatNum(v)),
     buildKpiCard('Tiempo prom.', k.avg_engagement_time, v => Math.round(v) + 's'),
     buildKpiCard('Engage rate', k.engagement_rate, v => (v*100).toFixed(0) + '%'),
+    buildKpiCard('🎯 Clics Buscar', k.conversions, v => formatNum(v), 'conversions'),
   ].join('');
   document.getElementById('kpi-grid').innerHTML = kpiHtml;
 
@@ -567,7 +572,7 @@ function renderEvolucion(ga4Data, items) {
   renderTrending('trending-down', e.trending_down, slug2info, 'down');
 }
 
-function buildKpiCard(label, kpi, formatFn) {
+function buildKpiCard(label, kpi, formatFn, extraClass) {
   if (!kpi) return '';
   const val = formatFn(kpi.actual);
   let deltaHtml = '';
@@ -579,7 +584,8 @@ function buildKpiCard(label, kpi, formatFn) {
     const showVal = Math.abs(dp) >= 1000 ? Math.round(dp) : dp.toFixed(1);
     deltaHtml = `<div class="delta ${dir}">${arrow} ${sign}${showVal}%</div>`;
   }
-  return `<div class="kpi-card"><div class="label">${label}</div><div class="value">${val}</div>${deltaHtml}<div class="sub">vs 14d anteriores</div></div>`;
+  const cls = extraClass ? ` ${extraClass}` : '';
+  return `<div class="kpi-card${cls}"><div class="label">${label}</div><div class="value">${val}</div>${deltaHtml}<div class="sub">vs 14d anteriores</div></div>`;
 }
 
 function renderSparkline(containerId, values, dates) {
