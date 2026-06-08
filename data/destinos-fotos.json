@@ -544,7 +544,7 @@
       "region": "Europa",
       "lat": 53.35,
       "lng": -6.26,
-      "fotos": 0
+      "fotos": 32
     },
     {
       "slug": "marrakech",
@@ -554,7 +554,7 @@
       "region": "Africa",
       "lat": 31.63,
       "lng": -8.01,
-      "fotos": 1
+      "fotos": 31
     },
     {
       "slug": "estambul",
@@ -564,7 +564,7 @@
       "region": "Europa",
       "lat": 41.01,
       "lng": 28.98,
-      "fotos": 2
+      "fotos": 25
     },
     {
       "slug": "atenas",
@@ -704,7 +704,7 @@
       "region": "Africa",
       "lat": 30.04,
       "lng": 31.24,
-      "fotos": 0
+      "fotos": 35
     },
     {
       "slug": "ciudad-del-cabo",
@@ -734,7 +734,7 @@
       "region": "Asia",
       "lat": 13.76,
       "lng": 100.5,
-      "fotos": 4
+      "fotos": 30
     },
     {
       "slug": "hanoi",
@@ -754,7 +754,7 @@
       "region": "Asia",
       "lat": 22.32,
       "lng": 114.17,
-      "fotos": 4
+      "fotos": 28
     },
     {
       "slug": "kuala-lumpur",
@@ -784,7 +784,7 @@
       "region": "Asia",
       "lat": 1.35,
       "lng": 103.82,
-      "fotos": 4
+      "fotos": 39
     },
     {
       "slug": "auckland",
