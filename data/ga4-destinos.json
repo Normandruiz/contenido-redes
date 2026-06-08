@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T11:31:31.103745+00:00",
+  "generated_at": "2026-06-08T13:56:46.030102+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -129,6 +129,15 @@
       "score": 0.4
     },
     {
+      "slug": "ushuaia",
+      "pageviews": 12,
+      "avg_engagement_time_seconds": 4.2,
+      "engagement_rate": 1.0,
+      "score_pre_rotation": 0.253,
+      "rotation_penalty": 0,
+      "score": 0.4
+    },
+    {
       "slug": "amsterdam",
       "pageviews": 8,
       "avg_engagement_time_seconds": 8.9,
@@ -147,15 +156,6 @@
       "score": 0.39
     },
     {
-      "slug": "ushuaia",
-      "pageviews": 9,
-      "avg_engagement_time_seconds": 4.9,
-      "engagement_rate": 1.0,
-      "score_pre_rotation": 0.233,
-      "rotation_penalty": 0,
-      "score": 0.38
-    },
-    {
       "slug": "salta",
       "pageviews": 5,
       "avg_engagement_time_seconds": 14.6,
@@ -163,6 +163,15 @@
       "score_pre_rotation": 0.215,
       "rotation_penalty": 0,
       "score": 0.36
+    },
+    {
+      "slug": "las-vegas",
+      "pageviews": 6,
+      "avg_engagement_time_seconds": 0.0,
+      "engagement_rate": 1.0,
+      "score_pre_rotation": 0.194,
+      "rotation_penalty": 0,
+      "score": 0.34
     },
     {
       "slug": "adz",
@@ -215,34 +224,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 5849,
-        "anterior": 4724,
-        "delta_pct": 23.8
+        "actual": 5813,
+        "anterior": 5050,
+        "delta_pct": 15.1
       },
       "sessions": {
-        "actual": 4542,
-        "anterior": 3313,
-        "delta_pct": 37.1
+        "actual": 4526,
+        "anterior": 3646,
+        "delta_pct": 24.1
       },
       "avg_engagement_time": {
-        "actual": 5.8,
-        "anterior": 7.7,
-        "delta_pct": -25.0
+        "actual": 5.6,
+        "anterior": 7.5,
+        "delta_pct": -25.5
       },
       "engagement_rate": {
-        "actual": 0.982,
-        "anterior": 0.983,
-        "delta_pct": -0.1
+        "actual": 0.972,
+        "anterior": 0.982,
+        "delta_pct": -1.0
       },
       "conversions": {
-        "actual": 86,
-        "anterior": 44,
-        "delta_pct": 95.5
+        "actual": 88,
+        "anterior": 47,
+        "delta_pct": 87.2
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-05-08",
         "2026-05-09",
         "2026-05-11",
         "2026-05-12",
@@ -271,10 +279,10 @@
         "2026-06-04",
         "2026-06-05",
         "2026-06-06",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "pageviews": [
-        8,
         4,
         126,
         60,
@@ -303,10 +311,10 @@
         346,
         364,
         301,
-        26
+        396,
+        46
       ],
       "sessions": [
-        2,
         2,
         17,
         20,
@@ -335,7 +343,8 @@
         278,
         277,
         243,
-        28
+        312,
+        50
       ]
     },
     "trending_up": [
@@ -347,17 +356,17 @@
         "delta_pct": 300.0
       },
       {
-        "slug": "cartagena",
-        "actual": 3,
-        "anterior": 1,
-        "delta_abs": 2,
-        "delta_pct": 200.0
-      },
-      {
         "slug": "madrid",
         "actual": 9,
         "anterior": 3,
         "delta_abs": 6,
+        "delta_pct": 200.0
+      },
+      {
+        "slug": "cartagena",
+        "actual": 3,
+        "anterior": 1,
+        "delta_abs": 2,
         "delta_pct": 200.0
       },
       {
@@ -368,10 +377,10 @@
         "delta_pct": 125.0
       },
       {
-        "slug": "maceio",
-        "actual": 2,
+        "slug": "las-vegas",
+        "actual": 6,
         "anterior": 0,
-        "delta_abs": 2,
+        "delta_abs": 6,
         "delta_pct": 100.0
       }
     ],
@@ -384,18 +393,18 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "ushuaia",
-        "actual": 0,
-        "anterior": 5,
-        "delta_abs": -5,
-        "delta_pct": -100.0
-      },
-      {
         "slug": "roma",
         "actual": 1,
         "anterior": 5,
         "delta_abs": -4,
         "delta_pct": -80.0
+      },
+      {
+        "slug": "tokio",
+        "actual": 1,
+        "anterior": 2,
+        "delta_abs": -1,
+        "delta_pct": -50.0
       }
     ]
   }
