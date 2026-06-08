@@ -3,101 +3,818 @@
   "_meta": {
     "min_fotos_completo": 5,
     "consumo_diario_fotos": 8,
-    "ultima_actualizacion": "2026-05-27"
+    "ultima_actualizacion": "2026-06-08"
   },
   "destinos": [
-    {"slug": "ushuaia", "name": "Ushuaia", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -54.81, "lng": -68.31, "fotos": 45},
-    {"slug": "buenos-aires", "name": "Buenos Aires", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -34.60, "lng": -58.38, "fotos": 36},
-    {"slug": "bariloche", "name": "Bariloche", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -41.13, "lng": -71.31, "fotos": 32},
-    {"slug": "cordoba", "name": "Cordoba", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -31.42, "lng": -64.18, "fotos": 32},
-    {"slug": "neuquen", "name": "Neuquen", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -38.95, "lng": -68.06, "fotos": 27},
-    {"slug": "mendoza", "name": "Mendoza", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -32.89, "lng": -68.83, "fotos": 26},
-    {"slug": "el-calafate", "name": "El Calafate", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -50.34, "lng": -72.27, "fotos": 25},
-    {"slug": "rosario", "name": "Rosario", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -32.94, "lng": -60.63, "fotos": 25},
-    {"slug": "salta", "name": "Salta", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -24.79, "lng": -65.41, "fotos": 25},
-    {"slug": "tucuman", "name": "Tucuman", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -26.82, "lng": -65.20, "fotos": 19},
-    {"slug": "iguazu", "name": "Iguazu", "country": "Argentina", "flag": "🇦🇷", "region": "Sudamerica", "lat": -25.60, "lng": -54.57, "fotos": 20},
-
-    {"slug": "salvador", "name": "Salvador (SSA)", "country": "Brasil", "flag": "🇧🇷", "region": "Sudamerica", "lat": -12.97, "lng": -38.51, "fotos": 32},
-    {"slug": "recife", "name": "Recife", "country": "Brasil", "flag": "🇧🇷", "region": "Sudamerica", "lat": -8.05, "lng": -34.87, "fotos": 26},
-    {"slug": "florianopolis", "name": "Florianopolis", "country": "Brasil", "flag": "🇧🇷", "region": "Sudamerica", "lat": -27.60, "lng": -48.55, "fotos": 23},
-    {"slug": "maceio", "name": "Maceio", "country": "Brasil", "flag": "🇧🇷", "region": "Sudamerica", "lat": -9.67, "lng": -35.74, "fotos": 21},
-    {"slug": "natal", "name": "Natal", "country": "Brasil", "flag": "🇧🇷", "region": "Sudamerica", "lat": -5.79, "lng": -35.21, "fotos": 20},
-    {"slug": "sao-paulo", "name": "Sao Paulo", "country": "Brasil", "flag": "🇧🇷", "region": "Sudamerica", "lat": -23.55, "lng": -46.63, "fotos": 13},
-    {"slug": "rio-de-janeiro", "name": "Rio de Janeiro", "country": "Brasil", "flag": "🇧🇷", "region": "Sudamerica", "lat": -22.91, "lng": -43.17, "fotos": 5},
-
-    {"slug": "cartagena", "name": "Cartagena", "country": "Colombia", "flag": "🇨🇴", "region": "Sudamerica", "lat": 10.39, "lng": -75.51, "fotos": 36},
-    {"slug": "bogota", "name": "Bogota", "country": "Colombia", "flag": "🇨🇴", "region": "Sudamerica", "lat": 4.71, "lng": -74.07, "fotos": 29},
-    {"slug": "san-andres", "name": "San Andres", "country": "Colombia", "flag": "🇨🇴", "region": "Sudamerica", "lat": 12.58, "lng": -81.70, "fotos": 27},
-    {"slug": "medellin", "name": "Medellin", "country": "Colombia", "flag": "🇨🇴", "region": "Sudamerica", "lat": 6.25, "lng": -75.56, "fotos": 24},
-
-    {"slug": "quito", "name": "Quito", "country": "Ecuador", "flag": "🇪🇨", "region": "Sudamerica", "lat": -0.18, "lng": -78.47, "fotos": 32},
-    {"slug": "lima", "name": "Lima", "country": "Peru", "flag": "🇵🇪", "region": "Sudamerica", "lat": -12.05, "lng": -77.04, "fotos": 30},
-    {"slug": "montevideo", "name": "Montevideo", "country": "Uruguay", "flag": "🇺🇾", "region": "Sudamerica", "lat": -34.91, "lng": -56.16, "fotos": 30},
-    {"slug": "cusco", "name": "Cusco", "country": "Peru", "flag": "🇵🇪", "region": "Sudamerica", "lat": -13.53, "lng": -71.97, "fotos": 25},
-    {"slug": "punta-cana", "name": "Punta Cana", "country": "Rep. Dominicana", "flag": "🇩🇴", "region": "Caribe", "lat": 18.56, "lng": -68.37, "fotos": 23},
-    {"slug": "santiago", "name": "Santiago", "country": "Chile", "flag": "🇨🇱", "region": "Sudamerica", "lat": -33.45, "lng": -70.67, "fotos": 20},
-
-    {"slug": "san-jose", "name": "San Jose", "country": "Costa Rica", "flag": "🇨🇷", "region": "Centroamerica", "lat": 9.93, "lng": -84.08, "fotos": 35},
-    {"slug": "la-habana", "name": "La Habana", "country": "Cuba", "flag": "🇨🇺", "region": "Caribe", "lat": 23.11, "lng": -82.37, "fotos": 32},
-    {"slug": "aruba", "name": "Aruba", "country": "Aruba", "flag": "🇦🇼", "region": "Caribe", "lat": 12.51, "lng": -69.97, "fotos": 28},
-    {"slug": "panama", "name": "Panama", "country": "Panama", "flag": "🇵🇦", "region": "Centroamerica", "lat": 8.98, "lng": -79.52, "fotos": 27},
-
-    {"slug": "miami", "name": "Miami", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 25.76, "lng": -80.19, "fotos": 37},
-    {"slug": "ciudad-de-mexico", "name": "Ciudad de Mexico", "country": "Mexico", "flag": "🇲🇽", "region": "Norteamerica", "lat": 19.43, "lng": -99.13, "fotos": 34},
-    {"slug": "chicago", "name": "Chicago", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 41.88, "lng": -87.63, "fotos": 29},
-    {"slug": "cancun", "name": "Cancun", "country": "Mexico", "flag": "🇲🇽", "region": "Norteamerica", "lat": 21.16, "lng": -86.85, "fotos": 27},
-    {"slug": "nueva-york", "name": "Nueva York", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 40.71, "lng": -74.01, "fotos": 25},
-    {"slug": "boston", "name": "Boston", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 42.36, "lng": -71.06, "fotos": 25},
-    {"slug": "las-vegas", "name": "Las Vegas", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 36.17, "lng": -115.14, "fotos": 25},
-    {"slug": "los-angeles", "name": "Los Angeles", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 34.05, "lng": -118.24, "fotos": 22},
-    {"slug": "washington-dc", "name": "Washington D.C.", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 38.91, "lng": -77.04, "fotos": 6},
-
-    {"slug": "barcelona", "name": "Barcelona", "country": "Espana", "flag": "🇪🇸", "region": "Europa", "lat": 41.39, "lng": 2.17, "fotos": 40},
-    {"slug": "paris", "name": "Paris", "country": "Francia", "flag": "🇫🇷", "region": "Europa", "lat": 48.86, "lng": 2.35, "fotos": 37},
-    {"slug": "madrid", "name": "Madrid", "country": "Espana", "flag": "🇪🇸", "region": "Europa", "lat": 40.42, "lng": -3.70, "fotos": 33},
-    {"slug": "roma", "name": "Roma", "country": "Italia", "flag": "🇮🇹", "region": "Europa", "lat": 41.90, "lng": 12.50, "fotos": 30},
-
-    {"slug": "tokio", "name": "Tokio", "country": "Japon", "flag": "🇯🇵", "region": "Asia", "lat": 35.68, "lng": 139.69, "fotos": 29},
-    {"slug": "dubai", "name": "Dubai", "country": "Emiratos Arabes", "flag": "🇦🇪", "region": "Medio Oriente", "lat": 25.20, "lng": 55.27, "fotos": 7},
-
-    {"slug": "nueva-orleans", "name": "Nueva Orleans", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 29.95, "lng": -90.07, "fotos": 4},
-    {"slug": "orlando", "name": "Orlando", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 28.54, "lng": -81.38, "fotos": 4},
-    {"slug": "san-diego", "name": "San Diego", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 32.72, "lng": -117.16, "fotos": 4},
-    {"slug": "san-francisco", "name": "San Francisco", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 37.77, "lng": -122.42, "fotos": 4},
-    {"slug": "seattle", "name": "Seattle", "country": "EE.UU.", "flag": "🇺🇸", "region": "Norteamerica", "lat": 47.61, "lng": -122.33, "fotos": 4},
-    {"slug": "toronto", "name": "Toronto", "country": "Canada", "flag": "🇨🇦", "region": "Norteamerica", "lat": 43.65, "lng": -79.38, "fotos": 4},
-
-    {"slug": "dublin", "name": "Dublin", "country": "Irlanda", "flag": "🇮🇪", "region": "Europa", "lat": 53.35, "lng": -6.26, "fotos": 0},
-    {"slug": "marrakech", "name": "Marrakech", "country": "Marruecos", "flag": "🇲🇦", "region": "Africa", "lat": 31.63, "lng": -8.01, "fotos": 1},
-    {"slug": "estambul", "name": "Estambul", "country": "Turquia", "flag": "🇹🇷", "region": "Europa", "lat": 41.01, "lng": 28.98, "fotos": 2},
-    {"slug": "atenas", "name": "Atenas", "country": "Grecia", "flag": "🇬🇷", "region": "Europa", "lat": 37.97, "lng": 23.73, "fotos": 3},
-    {"slug": "londres", "name": "Londres", "country": "Reino Unido", "flag": "🇬🇧", "region": "Europa", "lat": 51.51, "lng": -0.13, "fotos": 3},
-    {"slug": "amsterdam", "name": "Amsterdam", "country": "Paises Bajos", "flag": "🇳🇱", "region": "Europa", "lat": 52.37, "lng": 4.90, "fotos": 4},
-    {"slug": "berlin", "name": "Berlin", "country": "Alemania", "flag": "🇩🇪", "region": "Europa", "lat": 52.52, "lng": 13.41, "fotos": 4},
-    {"slug": "budapest", "name": "Budapest", "country": "Hungria", "flag": "🇭🇺", "region": "Europa", "lat": 47.50, "lng": 19.04, "fotos": 4},
-    {"slug": "dubrovnik", "name": "Dubrovnik", "country": "Croacia", "flag": "🇭🇷", "region": "Europa", "lat": 42.65, "lng": 18.09, "fotos": 4},
-    {"slug": "edimburgo", "name": "Edimburgo", "country": "Escocia", "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "region": "Europa", "lat": 55.95, "lng": -3.19, "fotos": 4},
-    {"slug": "florencia", "name": "Florencia", "country": "Italia", "flag": "🇮🇹", "region": "Europa", "lat": 43.77, "lng": 11.25, "fotos": 4},
-    {"slug": "lisboa", "name": "Lisboa", "country": "Portugal", "flag": "🇵🇹", "region": "Europa", "lat": 38.72, "lng": -9.14, "fotos": 4},
-    {"slug": "malta", "name": "Malta", "country": "Malta", "flag": "🇲🇹", "region": "Europa", "lat": 35.90, "lng": 14.51, "fotos": 4},
-    {"slug": "praga", "name": "Praga", "country": "Rep. Checa", "flag": "🇨🇿", "region": "Europa", "lat": 50.08, "lng": 14.44, "fotos": 4},
-    {"slug": "venecia", "name": "Venecia", "country": "Italia", "flag": "🇮🇹", "region": "Europa", "lat": 45.44, "lng": 12.32, "fotos": 4},
-    {"slug": "viena", "name": "Viena", "country": "Austria", "flag": "🇦🇹", "region": "Europa", "lat": 48.21, "lng": 16.37, "fotos": 4},
-
-    {"slug": "cairo", "name": "Cairo", "country": "Egipto", "flag": "🇪🇬", "region": "Africa", "lat": 30.04, "lng": 31.24, "fotos": 0},
-    {"slug": "ciudad-del-cabo", "name": "Ciudad del Cabo", "country": "Sudafrica", "flag": "🇿🇦", "region": "Africa", "lat": -33.92, "lng": 18.42, "fotos": 4},
-
-    {"slug": "bali", "name": "Bali", "country": "Indonesia", "flag": "🇮🇩", "region": "Asia", "lat": -8.34, "lng": 115.09, "fotos": 3},
-    {"slug": "bangkok", "name": "Bangkok", "country": "Tailandia", "flag": "🇹🇭", "region": "Asia", "lat": 13.76, "lng": 100.50, "fotos": 4},
-    {"slug": "hanoi", "name": "Hanoi", "country": "Vietnam", "flag": "🇻🇳", "region": "Asia", "lat": 21.03, "lng": 105.85, "fotos": 4},
-    {"slug": "hong-kong", "name": "Hong Kong", "country": "China", "flag": "🇭🇰", "region": "Asia", "lat": 22.32, "lng": 114.17, "fotos": 4},
-    {"slug": "kuala-lumpur", "name": "Kuala Lumpur", "country": "Malasia", "flag": "🇲🇾", "region": "Asia", "lat": 3.14, "lng": 101.69, "fotos": 4},
-    {"slug": "seul", "name": "Seul", "country": "Corea del Sur", "flag": "🇰🇷", "region": "Asia", "lat": 37.57, "lng": 126.98, "fotos": 4},
-    {"slug": "singapur", "name": "Singapur", "country": "Singapur", "flag": "🇸🇬", "region": "Asia", "lat": 1.35, "lng": 103.82, "fotos": 4},
-
-    {"slug": "auckland", "name": "Auckland", "country": "Nueva Zelanda", "flag": "🇳🇿", "region": "Oceania", "lat": -36.85, "lng": 174.76, "fotos": 0},
-    {"slug": "nueva-zelanda", "name": "Nueva Zelanda", "country": "Nueva Zelanda", "flag": "🇳🇿", "region": "Oceania", "lat": -41.29, "lng": 174.78, "fotos": 4},
-    {"slug": "sidney", "name": "Sidney", "country": "Australia", "flag": "🇦🇺", "region": "Oceania", "lat": -33.87, "lng": 151.21, "fotos": 4}
+    {
+      "slug": "ushuaia",
+      "name": "Ushuaia",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -54.81,
+      "lng": -68.31,
+      "fotos": 45
+    },
+    {
+      "slug": "buenos-aires",
+      "name": "Buenos Aires",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -34.6,
+      "lng": -58.38,
+      "fotos": 36
+    },
+    {
+      "slug": "bariloche",
+      "name": "Bariloche",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -41.13,
+      "lng": -71.31,
+      "fotos": 32
+    },
+    {
+      "slug": "cordoba",
+      "name": "Cordoba",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -31.42,
+      "lng": -64.18,
+      "fotos": 32
+    },
+    {
+      "slug": "neuquen",
+      "name": "Neuquen",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -38.95,
+      "lng": -68.06,
+      "fotos": 27
+    },
+    {
+      "slug": "mendoza",
+      "name": "Mendoza",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -32.89,
+      "lng": -68.83,
+      "fotos": 26
+    },
+    {
+      "slug": "el-calafate",
+      "name": "El Calafate",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -50.34,
+      "lng": -72.27,
+      "fotos": 25
+    },
+    {
+      "slug": "rosario",
+      "name": "Rosario",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -32.94,
+      "lng": -60.63,
+      "fotos": 25
+    },
+    {
+      "slug": "salta",
+      "name": "Salta",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -24.79,
+      "lng": -65.41,
+      "fotos": 25
+    },
+    {
+      "slug": "tucuman",
+      "name": "Tucuman",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -26.82,
+      "lng": -65.2,
+      "fotos": 19
+    },
+    {
+      "slug": "iguazu",
+      "name": "Iguazu",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Sudamerica",
+      "lat": -25.6,
+      "lng": -54.57,
+      "fotos": 4
+    },
+    {
+      "slug": "salvador",
+      "name": "Salvador (SSA)",
+      "country": "Brasil",
+      "flag": "🇧🇷",
+      "region": "Sudamerica",
+      "lat": -12.97,
+      "lng": -38.51,
+      "fotos": 32
+    },
+    {
+      "slug": "recife",
+      "name": "Recife",
+      "country": "Brasil",
+      "flag": "🇧🇷",
+      "region": "Sudamerica",
+      "lat": -8.05,
+      "lng": -34.87,
+      "fotos": 26
+    },
+    {
+      "slug": "florianopolis",
+      "name": "Florianopolis",
+      "country": "Brasil",
+      "flag": "🇧🇷",
+      "region": "Sudamerica",
+      "lat": -27.6,
+      "lng": -48.55,
+      "fotos": 23
+    },
+    {
+      "slug": "maceio",
+      "name": "Maceio",
+      "country": "Brasil",
+      "flag": "🇧🇷",
+      "region": "Sudamerica",
+      "lat": -9.67,
+      "lng": -35.74,
+      "fotos": 21
+    },
+    {
+      "slug": "natal",
+      "name": "Natal",
+      "country": "Brasil",
+      "flag": "🇧🇷",
+      "region": "Sudamerica",
+      "lat": -5.79,
+      "lng": -35.21,
+      "fotos": 20
+    },
+    {
+      "slug": "sao-paulo",
+      "name": "Sao Paulo",
+      "country": "Brasil",
+      "flag": "🇧🇷",
+      "region": "Sudamerica",
+      "lat": -23.55,
+      "lng": -46.63,
+      "fotos": 13
+    },
+    {
+      "slug": "rio-de-janeiro",
+      "name": "Rio de Janeiro",
+      "country": "Brasil",
+      "flag": "🇧🇷",
+      "region": "Sudamerica",
+      "lat": -22.91,
+      "lng": -43.17,
+      "fotos": 5
+    },
+    {
+      "slug": "cartagena",
+      "name": "Cartagena",
+      "country": "Colombia",
+      "flag": "🇨🇴",
+      "region": "Sudamerica",
+      "lat": 10.39,
+      "lng": -75.51,
+      "fotos": 36
+    },
+    {
+      "slug": "bogota",
+      "name": "Bogota",
+      "country": "Colombia",
+      "flag": "🇨🇴",
+      "region": "Sudamerica",
+      "lat": 4.71,
+      "lng": -74.07,
+      "fotos": 29
+    },
+    {
+      "slug": "san-andres",
+      "name": "San Andres",
+      "country": "Colombia",
+      "flag": "🇨🇴",
+      "region": "Sudamerica",
+      "lat": 12.58,
+      "lng": -81.7,
+      "fotos": 27
+    },
+    {
+      "slug": "medellin",
+      "name": "Medellin",
+      "country": "Colombia",
+      "flag": "🇨🇴",
+      "region": "Sudamerica",
+      "lat": 6.25,
+      "lng": -75.56,
+      "fotos": 24
+    },
+    {
+      "slug": "quito",
+      "name": "Quito",
+      "country": "Ecuador",
+      "flag": "🇪🇨",
+      "region": "Sudamerica",
+      "lat": -0.18,
+      "lng": -78.47,
+      "fotos": 32
+    },
+    {
+      "slug": "lima",
+      "name": "Lima",
+      "country": "Peru",
+      "flag": "🇵🇪",
+      "region": "Sudamerica",
+      "lat": -12.05,
+      "lng": -77.04,
+      "fotos": 30
+    },
+    {
+      "slug": "montevideo",
+      "name": "Montevideo",
+      "country": "Uruguay",
+      "flag": "🇺🇾",
+      "region": "Sudamerica",
+      "lat": -34.91,
+      "lng": -56.16,
+      "fotos": 30
+    },
+    {
+      "slug": "cusco",
+      "name": "Cusco",
+      "country": "Peru",
+      "flag": "🇵🇪",
+      "region": "Sudamerica",
+      "lat": -13.53,
+      "lng": -71.97,
+      "fotos": 25
+    },
+    {
+      "slug": "punta-cana",
+      "name": "Punta Cana",
+      "country": "Rep. Dominicana",
+      "flag": "🇩🇴",
+      "region": "Caribe",
+      "lat": 18.56,
+      "lng": -68.37,
+      "fotos": 23
+    },
+    {
+      "slug": "santiago",
+      "name": "Santiago",
+      "country": "Chile",
+      "flag": "🇨🇱",
+      "region": "Sudamerica",
+      "lat": -33.45,
+      "lng": -70.67,
+      "fotos": 20
+    },
+    {
+      "slug": "san-jose",
+      "name": "San Jose",
+      "country": "Costa Rica",
+      "flag": "🇨🇷",
+      "region": "Centroamerica",
+      "lat": 9.93,
+      "lng": -84.08,
+      "fotos": 35
+    },
+    {
+      "slug": "la-habana",
+      "name": "La Habana",
+      "country": "Cuba",
+      "flag": "🇨🇺",
+      "region": "Caribe",
+      "lat": 23.11,
+      "lng": -82.37,
+      "fotos": 32
+    },
+    {
+      "slug": "aruba",
+      "name": "Aruba",
+      "country": "Aruba",
+      "flag": "🇦🇼",
+      "region": "Caribe",
+      "lat": 12.51,
+      "lng": -69.97,
+      "fotos": 28
+    },
+    {
+      "slug": "panama",
+      "name": "Panama",
+      "country": "Panama",
+      "flag": "🇵🇦",
+      "region": "Centroamerica",
+      "lat": 8.98,
+      "lng": -79.52,
+      "fotos": 27
+    },
+    {
+      "slug": "miami",
+      "name": "Miami",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 25.76,
+      "lng": -80.19,
+      "fotos": 37
+    },
+    {
+      "slug": "ciudad-de-mexico",
+      "name": "Ciudad de Mexico",
+      "country": "Mexico",
+      "flag": "🇲🇽",
+      "region": "Norteamerica",
+      "lat": 19.43,
+      "lng": -99.13,
+      "fotos": 34
+    },
+    {
+      "slug": "chicago",
+      "name": "Chicago",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 41.88,
+      "lng": -87.63,
+      "fotos": 29
+    },
+    {
+      "slug": "cancun",
+      "name": "Cancun",
+      "country": "Mexico",
+      "flag": "🇲🇽",
+      "region": "Norteamerica",
+      "lat": 21.16,
+      "lng": -86.85,
+      "fotos": 27
+    },
+    {
+      "slug": "nueva-york",
+      "name": "Nueva York",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 40.71,
+      "lng": -74.01,
+      "fotos": 25
+    },
+    {
+      "slug": "boston",
+      "name": "Boston",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 42.36,
+      "lng": -71.06,
+      "fotos": 25
+    },
+    {
+      "slug": "las-vegas",
+      "name": "Las Vegas",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 36.17,
+      "lng": -115.14,
+      "fotos": 25
+    },
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 34.05,
+      "lng": -118.24,
+      "fotos": 22
+    },
+    {
+      "slug": "washington-dc",
+      "name": "Washington D.C.",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 38.91,
+      "lng": -77.04,
+      "fotos": 6
+    },
+    {
+      "slug": "barcelona",
+      "name": "Barcelona",
+      "country": "Espana",
+      "flag": "🇪🇸",
+      "region": "Europa",
+      "lat": 41.39,
+      "lng": 2.17,
+      "fotos": 40
+    },
+    {
+      "slug": "paris",
+      "name": "Paris",
+      "country": "Francia",
+      "flag": "🇫🇷",
+      "region": "Europa",
+      "lat": 48.86,
+      "lng": 2.35,
+      "fotos": 37
+    },
+    {
+      "slug": "madrid",
+      "name": "Madrid",
+      "country": "Espana",
+      "flag": "🇪🇸",
+      "region": "Europa",
+      "lat": 40.42,
+      "lng": -3.7,
+      "fotos": 33
+    },
+    {
+      "slug": "roma",
+      "name": "Roma",
+      "country": "Italia",
+      "flag": "🇮🇹",
+      "region": "Europa",
+      "lat": 41.9,
+      "lng": 12.5,
+      "fotos": 30
+    },
+    {
+      "slug": "tokio",
+      "name": "Tokio",
+      "country": "Japon",
+      "flag": "🇯🇵",
+      "region": "Asia",
+      "lat": 35.68,
+      "lng": 139.69,
+      "fotos": 29
+    },
+    {
+      "slug": "dubai",
+      "name": "Dubai",
+      "country": "Emiratos Arabes",
+      "flag": "🇦🇪",
+      "region": "Medio Oriente",
+      "lat": 25.2,
+      "lng": 55.27,
+      "fotos": 7
+    },
+    {
+      "slug": "nueva-orleans",
+      "name": "Nueva Orleans",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 29.95,
+      "lng": -90.07,
+      "fotos": 4
+    },
+    {
+      "slug": "orlando",
+      "name": "Orlando",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 28.54,
+      "lng": -81.38,
+      "fotos": 4
+    },
+    {
+      "slug": "san-diego",
+      "name": "San Diego",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 32.72,
+      "lng": -117.16,
+      "fotos": 4
+    },
+    {
+      "slug": "san-francisco",
+      "name": "San Francisco",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 37.77,
+      "lng": -122.42,
+      "fotos": 4
+    },
+    {
+      "slug": "seattle",
+      "name": "Seattle",
+      "country": "EE.UU.",
+      "flag": "🇺🇸",
+      "region": "Norteamerica",
+      "lat": 47.61,
+      "lng": -122.33,
+      "fotos": 4
+    },
+    {
+      "slug": "toronto",
+      "name": "Toronto",
+      "country": "Canada",
+      "flag": "🇨🇦",
+      "region": "Norteamerica",
+      "lat": 43.65,
+      "lng": -79.38,
+      "fotos": 4
+    },
+    {
+      "slug": "dublin",
+      "name": "Dublin",
+      "country": "Irlanda",
+      "flag": "🇮🇪",
+      "region": "Europa",
+      "lat": 53.35,
+      "lng": -6.26,
+      "fotos": 0
+    },
+    {
+      "slug": "marrakech",
+      "name": "Marrakech",
+      "country": "Marruecos",
+      "flag": "🇲🇦",
+      "region": "Africa",
+      "lat": 31.63,
+      "lng": -8.01,
+      "fotos": 1
+    },
+    {
+      "slug": "estambul",
+      "name": "Estambul",
+      "country": "Turquia",
+      "flag": "🇹🇷",
+      "region": "Europa",
+      "lat": 41.01,
+      "lng": 28.98,
+      "fotos": 2
+    },
+    {
+      "slug": "atenas",
+      "name": "Atenas",
+      "country": "Grecia",
+      "flag": "🇬🇷",
+      "region": "Europa",
+      "lat": 37.97,
+      "lng": 23.73,
+      "fotos": 3
+    },
+    {
+      "slug": "londres",
+      "name": "Londres",
+      "country": "Reino Unido",
+      "flag": "🇬🇧",
+      "region": "Europa",
+      "lat": 51.51,
+      "lng": -0.13,
+      "fotos": 3
+    },
+    {
+      "slug": "amsterdam",
+      "name": "Amsterdam",
+      "country": "Paises Bajos",
+      "flag": "🇳🇱",
+      "region": "Europa",
+      "lat": 52.37,
+      "lng": 4.9,
+      "fotos": 4
+    },
+    {
+      "slug": "berlin",
+      "name": "Berlin",
+      "country": "Alemania",
+      "flag": "🇩🇪",
+      "region": "Europa",
+      "lat": 52.52,
+      "lng": 13.41,
+      "fotos": 4
+    },
+    {
+      "slug": "budapest",
+      "name": "Budapest",
+      "country": "Hungria",
+      "flag": "🇭🇺",
+      "region": "Europa",
+      "lat": 47.5,
+      "lng": 19.04,
+      "fotos": 4
+    },
+    {
+      "slug": "dubrovnik",
+      "name": "Dubrovnik",
+      "country": "Croacia",
+      "flag": "🇭🇷",
+      "region": "Europa",
+      "lat": 42.65,
+      "lng": 18.09,
+      "fotos": 4
+    },
+    {
+      "slug": "edimburgo",
+      "name": "Edimburgo",
+      "country": "Escocia",
+      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "region": "Europa",
+      "lat": 55.95,
+      "lng": -3.19,
+      "fotos": 4
+    },
+    {
+      "slug": "florencia",
+      "name": "Florencia",
+      "country": "Italia",
+      "flag": "🇮🇹",
+      "region": "Europa",
+      "lat": 43.77,
+      "lng": 11.25,
+      "fotos": 4
+    },
+    {
+      "slug": "lisboa",
+      "name": "Lisboa",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "region": "Europa",
+      "lat": 38.72,
+      "lng": -9.14,
+      "fotos": 4
+    },
+    {
+      "slug": "malta",
+      "name": "Malta",
+      "country": "Malta",
+      "flag": "🇲🇹",
+      "region": "Europa",
+      "lat": 35.9,
+      "lng": 14.51,
+      "fotos": 4
+    },
+    {
+      "slug": "praga",
+      "name": "Praga",
+      "country": "Rep. Checa",
+      "flag": "🇨🇿",
+      "region": "Europa",
+      "lat": 50.08,
+      "lng": 14.44,
+      "fotos": 4
+    },
+    {
+      "slug": "venecia",
+      "name": "Venecia",
+      "country": "Italia",
+      "flag": "🇮🇹",
+      "region": "Europa",
+      "lat": 45.44,
+      "lng": 12.32,
+      "fotos": 4
+    },
+    {
+      "slug": "viena",
+      "name": "Viena",
+      "country": "Austria",
+      "flag": "🇦🇹",
+      "region": "Europa",
+      "lat": 48.21,
+      "lng": 16.37,
+      "fotos": 4
+    },
+    {
+      "slug": "cairo",
+      "name": "Cairo",
+      "country": "Egipto",
+      "flag": "🇪🇬",
+      "region": "Africa",
+      "lat": 30.04,
+      "lng": 31.24,
+      "fotos": 0
+    },
+    {
+      "slug": "ciudad-del-cabo",
+      "name": "Ciudad del Cabo",
+      "country": "Sudafrica",
+      "flag": "🇿🇦",
+      "region": "Africa",
+      "lat": -33.92,
+      "lng": 18.42,
+      "fotos": 4
+    },
+    {
+      "slug": "bali",
+      "name": "Bali",
+      "country": "Indonesia",
+      "flag": "🇮🇩",
+      "region": "Asia",
+      "lat": -8.34,
+      "lng": 115.09,
+      "fotos": 3
+    },
+    {
+      "slug": "bangkok",
+      "name": "Bangkok",
+      "country": "Tailandia",
+      "flag": "🇹🇭",
+      "region": "Asia",
+      "lat": 13.76,
+      "lng": 100.5,
+      "fotos": 4
+    },
+    {
+      "slug": "hanoi",
+      "name": "Hanoi",
+      "country": "Vietnam",
+      "flag": "🇻🇳",
+      "region": "Asia",
+      "lat": 21.03,
+      "lng": 105.85,
+      "fotos": 4
+    },
+    {
+      "slug": "hong-kong",
+      "name": "Hong Kong",
+      "country": "China",
+      "flag": "🇭🇰",
+      "region": "Asia",
+      "lat": 22.32,
+      "lng": 114.17,
+      "fotos": 4
+    },
+    {
+      "slug": "kuala-lumpur",
+      "name": "Kuala Lumpur",
+      "country": "Malasia",
+      "flag": "🇲🇾",
+      "region": "Asia",
+      "lat": 3.14,
+      "lng": 101.69,
+      "fotos": 4
+    },
+    {
+      "slug": "seul",
+      "name": "Seul",
+      "country": "Corea del Sur",
+      "flag": "🇰🇷",
+      "region": "Asia",
+      "lat": 37.57,
+      "lng": 126.98,
+      "fotos": 4
+    },
+    {
+      "slug": "singapur",
+      "name": "Singapur",
+      "country": "Singapur",
+      "flag": "🇸🇬",
+      "region": "Asia",
+      "lat": 1.35,
+      "lng": 103.82,
+      "fotos": 4
+    },
+    {
+      "slug": "auckland",
+      "name": "Auckland",
+      "country": "Nueva Zelanda",
+      "flag": "🇳🇿",
+      "region": "Oceania",
+      "lat": -36.85,
+      "lng": 174.76,
+      "fotos": 21
+    },
+    {
+      "slug": "nueva-zelanda",
+      "name": "Nueva Zelanda",
+      "country": "Nueva Zelanda",
+      "flag": "🇳🇿",
+      "region": "Oceania",
+      "lat": -41.29,
+      "lng": 174.78,
+      "fotos": 37
+    },
+    {
+      "slug": "sidney",
+      "name": "Sidney",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "region": "Oceania",
+      "lat": -33.87,
+      "lng": 151.21,
+      "fotos": 42
+    }
   ]
 }

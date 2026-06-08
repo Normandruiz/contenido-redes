@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-28T00:38:30.711035+00:00",
+  "updated_at": "2026-06-08T18:19:11.820129+00:00",
   "log": [
     {
       "date": "2026-05-27",
@@ -25,6 +25,19 @@
         "santiago",
         "punta-cana",
         "roma"
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "top8": [
+        "santiago",
+        "cancun",
+        "recife",
+        "bariloche",
+        "paris",
+        "iguazu",
+        "miami",
+        "rio-de-janeiro"
       ]
     }
   ]
