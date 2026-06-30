@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T13:56:39.714372+00:00",
+  "generated_at": "2026-06-30T12:03:23.624663+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -76,12 +76,12 @@
     },
     {
       "slug": "cordoba",
-      "pageviews": 26,
-      "avg_engagement_time_seconds": 9.9,
-      "engagement_rate": 0.75,
-      "score_pre_rotation": 0.341,
+      "pageviews": 27,
+      "avg_engagement_time_seconds": 10.5,
+      "engagement_rate": 0.762,
+      "score_pre_rotation": 0.353,
       "rotation_penalty": 0,
-      "score": 0.49
+      "score": 0.5
     },
     {
       "slug": "madrid",
@@ -192,6 +192,15 @@
       "score": 0.35
     },
     {
+      "slug": "barcelona",
+      "pageviews": 11,
+      "avg_engagement_time_seconds": 6.9,
+      "engagement_rate": 0.545,
+      "score_pre_rotation": 0.19,
+      "rotation_penalty": 0,
+      "score": 0.34
+    },
+    {
       "slug": "tokio",
       "pageviews": 9,
       "avg_engagement_time_seconds": 3.9,
@@ -255,15 +264,6 @@
       "score": 0.32
     },
     {
-      "slug": "barcelona",
-      "pageviews": 10,
-      "avg_engagement_time_seconds": 3.6,
-      "engagement_rate": 0.5,
-      "score_pre_rotation": 0.162,
-      "rotation_penalty": 0,
-      "score": 0.31
-    },
-    {
       "slug": "cusco",
       "pageviews": 3,
       "avg_engagement_time_seconds": 4.7,
@@ -318,6 +318,15 @@
       "score": 0.25
     },
     {
+      "slug": "panama",
+      "pageviews": 3,
+      "avg_engagement_time_seconds": 3.3,
+      "engagement_rate": 0.333,
+      "score_pre_rotation": 0.086,
+      "rotation_penalty": 0,
+      "score": 0.24
+    },
+    {
       "slug": "bogota",
       "pageviews": 4,
       "avg_engagement_time_seconds": 0.8,
@@ -332,34 +341,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 3048,
-        "anterior": 4894,
-        "delta_pct": -37.7
+        "actual": 3299,
+        "anterior": 4415,
+        "delta_pct": -25.3
       },
       "sessions": {
-        "actual": 2672,
-        "anterior": 3738,
-        "delta_pct": -28.5
+        "actual": 2915,
+        "anterior": 3372,
+        "delta_pct": -13.6
       },
       "avg_engagement_time": {
-        "actual": 10.0,
-        "anterior": 5.9,
-        "delta_pct": 69.6
+        "actual": 10.1,
+        "anterior": 5.5,
+        "delta_pct": 82.8
       },
       "engagement_rate": {
-        "actual": 0.411,
-        "anterior": 0.988,
-        "delta_pct": -58.4
+        "actual": 0.361,
+        "anterior": 0.989,
+        "delta_pct": -63.6
       },
       "conversions": {
-        "actual": 57,
-        "anterior": 83,
-        "delta_pct": -31.3
+        "actual": 49,
+        "anterior": 72,
+        "delta_pct": -31.9
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-05-31",
         "2026-06-01",
         "2026-06-02",
         "2026-06-03",
@@ -388,10 +396,10 @@
         "2026-06-26",
         "2026-06-27",
         "2026-06-28",
-        "2026-06-29"
+        "2026-06-29",
+        "2026-06-30"
       ],
       "pageviews": [
-        474,
         391,
         481,
         458,
@@ -420,10 +428,10 @@
         256,
         245,
         260,
-        22
+        262,
+        13
       ],
       "sessions": [
-        385,
         309,
         368,
         349,
@@ -452,7 +460,8 @@
         249,
         252,
         264,
-        25
+        254,
+        16
       ]
     },
     "trending_up": [
@@ -465,17 +474,17 @@
       },
       {
         "slug": "barcelona",
-        "actual": 6,
+        "actual": 7,
         "anterior": 1,
-        "delta_abs": 5,
-        "delta_pct": 500.0
+        "delta_abs": 6,
+        "delta_pct": 600.0
       },
       {
         "slug": "punta-cana",
-        "actual": 6,
+        "actual": 5,
         "anterior": 1,
-        "delta_abs": 5,
-        "delta_pct": 500.0
+        "delta_abs": 4,
+        "delta_pct": 400.0
       },
       {
         "slug": "aruba",
@@ -494,10 +503,17 @@
     ],
     "trending_down": [
       {
-        "slug": "maceio",
+        "slug": "seul",
         "actual": 0,
-        "anterior": 2,
-        "delta_abs": -2,
+        "anterior": 5,
+        "delta_abs": -5,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "las-vegas",
+        "actual": 0,
+        "anterior": 6,
+        "delta_abs": -6,
         "delta_pct": -100.0
       },
       {
@@ -505,13 +521,6 @@
         "actual": 0,
         "anterior": 8,
         "delta_abs": -8,
-        "delta_pct": -100.0
-      },
-      {
-        "slug": "seul",
-        "actual": 0,
-        "anterior": 5,
-        "delta_abs": -5,
         "delta_pct": -100.0
       }
     ]
