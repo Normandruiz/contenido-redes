@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T13:35:37.156779+00:00",
+  "generated_at": "2026-07-07T12:18:59.367944+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -58,10 +58,10 @@
     },
     {
       "slug": "paris",
-      "pageviews": 33,
-      "avg_engagement_time_seconds": 8.6,
-      "engagement_rate": 0.828,
-      "score_pre_rotation": 0.397,
+      "pageviews": 36,
+      "avg_engagement_time_seconds": 7.9,
+      "engagement_rate": 0.741,
+      "score_pre_rotation": 0.402,
       "rotation_penalty": 0,
       "score": 0.55
     },
@@ -377,34 +377,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 2510,
-        "anterior": 3586,
-        "delta_pct": -30.0
+        "actual": 2247,
+        "anterior": 3567,
+        "delta_pct": -37.0
       },
       "sessions": {
-        "actual": 2312,
-        "anterior": 2742,
-        "delta_pct": -15.7
+        "actual": 2095,
+        "anterior": 2745,
+        "delta_pct": -23.7
       },
       "avg_engagement_time": {
-        "actual": 12.6,
-        "anterior": 7.3,
-        "delta_pct": 72.6
+        "actual": 12.9,
+        "anterior": 7.8,
+        "delta_pct": 65.9
       },
       "engagement_rate": {
-        "actual": 0.384,
+        "actual": 0.355,
         "anterior": 0.698,
-        "delta_pct": -44.9
+        "delta_pct": -49.1
       },
       "conversions": {
-        "actual": 61,
-        "anterior": 58,
-        "delta_pct": 5.2
+        "actual": 54,
+        "anterior": 54,
+        "delta_pct": 0.0
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-06-07",
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
@@ -433,10 +432,10 @@
         "2026-07-03",
         "2026-07-04",
         "2026-07-05",
-        "2026-07-06"
+        "2026-07-06",
+        "2026-07-07"
       ],
       "pageviews": [
-        396,
         396,
         318,
         328,
@@ -465,10 +464,10 @@
         99,
         33,
         24,
-        6
+        37,
+        5
       ],
       "sessions": [
-        312,
         307,
         244,
         263,
@@ -497,7 +496,8 @@
         57,
         26,
         21,
-        4
+        27,
+        7
       ]
     },
     "trending_up": [
@@ -516,18 +516,11 @@
         "delta_pct": 200.0
       },
       {
-        "slug": "madrid",
-        "actual": 10,
-        "anterior": 4,
-        "delta_abs": 6,
-        "delta_pct": 150.0
-      },
-      {
-        "slug": "salta",
-        "actual": 14,
-        "anterior": 6,
-        "delta_abs": 8,
-        "delta_pct": 133.3
+        "slug": "san-francisco",
+        "actual": 4,
+        "anterior": 0,
+        "delta_abs": 4,
+        "delta_pct": 100.0
       },
       {
         "slug": "sidney",
@@ -535,11 +528,25 @@
         "anterior": 0,
         "delta_abs": 3,
         "delta_pct": 100.0
+      },
+      {
+        "slug": "recife",
+        "actual": 2,
+        "anterior": 1,
+        "delta_abs": 1,
+        "delta_pct": 100.0
       }
     ],
     "trending_down": [
       {
-        "slug": "hong-kong",
+        "slug": "mendoza",
+        "actual": 0,
+        "anterior": 2,
+        "delta_abs": -2,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "edimburgo",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
@@ -550,13 +557,6 @@
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
-        "delta_pct": -100.0
-      },
-      {
-        "slug": "dubrovnik",
-        "actual": 0,
-        "anterior": 8,
-        "delta_abs": -8,
         "delta_pct": -100.0
       }
     ]
