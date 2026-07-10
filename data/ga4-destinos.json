@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T12:23:34.950580+00:00",
+  "generated_at": "2026-07-10T12:16:33.110141+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -377,34 +377,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 1805,
-        "anterior": 3447,
-        "delta_pct": -47.6
+        "actual": 1559,
+        "anterior": 3371,
+        "delta_pct": -53.8
       },
       "sessions": {
-        "actual": 1661,
-        "anterior": 2724,
-        "delta_pct": -39.0
+        "actual": 1423,
+        "anterior": 2740,
+        "delta_pct": -48.1
       },
       "avg_engagement_time": {
-        "actual": 14.7,
+        "actual": 15.4,
         "anterior": 8.9,
-        "delta_pct": 65.1
+        "delta_pct": 72.8
       },
       "engagement_rate": {
-        "actual": 0.352,
-        "anterior": 0.619,
-        "delta_pct": -43.1
+        "actual": 0.339,
+        "anterior": 0.572,
+        "delta_pct": -40.7
       },
       "conversions": {
-        "actual": 51,
-        "anterior": 56,
-        "delta_pct": -8.9
+        "actual": 44,
+        "anterior": 58,
+        "delta_pct": -24.1
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-06-10",
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
@@ -433,10 +432,10 @@
         "2026-07-06",
         "2026-07-07",
         "2026-07-08",
-        "2026-07-09"
+        "2026-07-09",
+        "2026-07-10"
       ],
       "pageviews": [
-        328,
         324,
         332,
         297,
@@ -465,10 +464,10 @@
         37,
         36,
         54,
-        5
+        14,
+        1
       ],
       "sessions": [
-        263,
         255,
         233,
         200,
@@ -497,17 +496,11 @@
         27,
         33,
         33,
-        4
+        13,
+        2
       ]
     },
     "trending_up": [
-      {
-        "slug": "lisboa",
-        "actual": 6,
-        "anterior": 1,
-        "delta_abs": 5,
-        "delta_pct": 500.0
-      },
       {
         "slug": "panama",
         "actual": 4,
@@ -523,17 +516,24 @@
         "delta_pct": 200.0
       },
       {
-        "slug": "recife",
-        "actual": 2,
-        "anterior": 1,
-        "delta_abs": 1,
-        "delta_pct": 100.0
-      },
-      {
         "slug": "san-francisco",
         "actual": 4,
         "anterior": 0,
         "delta_abs": 4,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "cartagena",
+        "actual": 2,
+        "anterior": 0,
+        "delta_abs": 2,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "sidney",
+        "actual": 3,
+        "anterior": 0,
+        "delta_abs": 3,
         "delta_pct": 100.0
       }
     ],
@@ -546,14 +546,14 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "nueva-york",
+        "slug": "iguazu",
         "actual": 0,
-        "anterior": 3,
-        "delta_abs": -3,
+        "anterior": 2,
+        "delta_abs": -2,
         "delta_pct": -100.0
       },
       {
-        "slug": "edimburgo",
+        "slug": "mendoza",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
