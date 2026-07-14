@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T12:23:53.650112+00:00",
+  "generated_at": "2026-07-14T11:14:27.205318+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -13,10 +13,10 @@
   "destinos": [
     {
       "slug": "santiago",
-      "pageviews": 33,
-      "avg_engagement_time_seconds": 46.5,
-      "engagement_rate": 0.737,
-      "score_pre_rotation": 0.636,
+      "pageviews": 34,
+      "avg_engagement_time_seconds": 45.1,
+      "engagement_rate": 0.747,
+      "score_pre_rotation": 0.635,
       "rotation_penalty": 0,
       "score": 0.79
     },
@@ -49,12 +49,12 @@
     },
     {
       "slug": "miami",
-      "pageviews": 48,
-      "avg_engagement_time_seconds": 5.5,
-      "engagement_rate": 0.72,
-      "score_pre_rotation": 0.473,
+      "pageviews": 49,
+      "avg_engagement_time_seconds": 5.8,
+      "engagement_rate": 0.704,
+      "score_pre_rotation": 0.479,
       "rotation_penalty": 0,
-      "score": 0.62
+      "score": 0.63
     },
     {
       "slug": "recife",
@@ -94,12 +94,12 @@
     },
     {
       "slug": "paris",
-      "pageviews": 37,
-      "avg_engagement_time_seconds": 7.8,
-      "engagement_rate": 0.64,
-      "score_pre_rotation": 0.4,
+      "pageviews": 35,
+      "avg_engagement_time_seconds": 7.5,
+      "engagement_rate": 0.617,
+      "score_pre_rotation": 0.381,
       "rotation_penalty": 0,
-      "score": 0.55
+      "score": 0.53
     },
     {
       "slug": "bariloche",
@@ -377,34 +377,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 1372,
-        "anterior": 3288,
-        "delta_pct": -58.3
+        "actual": 1361,
+        "anterior": 3512,
+        "delta_pct": -61.2
       },
       "sessions": {
-        "actual": 1079,
-        "anterior": 2901,
-        "delta_pct": -62.8
+        "actual": 1022,
+        "anterior": 3137,
+        "delta_pct": -67.4
       },
       "avg_engagement_time": {
-        "actual": 16.7,
+        "actual": 17.7,
         "anterior": 10.2,
-        "delta_pct": 64.4
+        "delta_pct": 74.0
       },
       "engagement_rate": {
-        "actual": 0.302,
-        "anterior": 0.432,
-        "delta_pct": -30.1
+        "actual": 0.295,
+        "anterior": 0.377,
+        "delta_pct": -22.0
       },
       "conversions": {
-        "actual": 46,
-        "anterior": 60,
-        "delta_pct": -23.3
+        "actual": 48,
+        "anterior": 53,
+        "delta_pct": -9.4
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-06-14",
         "2026-06-15",
         "2026-06-16",
         "2026-06-17",
@@ -433,10 +432,10 @@
         "2026-07-10",
         "2026-07-11",
         "2026-07-12",
-        "2026-07-13"
+        "2026-07-13",
+        "2026-07-14"
       ],
       "pageviews": [
-        304,
         249,
         2,
         2,
@@ -465,10 +464,10 @@
         83,
         257,
         219,
-        22
+        223,
+        14
       ],
       "sessions": [
-        239,
         170,
         2,
         2,
@@ -497,7 +496,8 @@
         75,
         161,
         168,
-        24
+        191,
+        14
       ]
     },
     "trending_up": [
@@ -507,13 +507,6 @@
         "anterior": 1,
         "delta_abs": 6,
         "delta_pct": 600.0
-      },
-      {
-        "slug": "panama",
-        "actual": 4,
-        "anterior": 1,
-        "delta_abs": 3,
-        "delta_pct": 300.0
       },
       {
         "slug": "amsterdam",
@@ -535,11 +528,18 @@
         "anterior": 1,
         "delta_abs": 1,
         "delta_pct": 100.0
+      },
+      {
+        "slug": "san-francisco",
+        "actual": 4,
+        "anterior": 0,
+        "delta_abs": 4,
+        "delta_pct": 100.0
       }
     ],
     "trending_down": [
       {
-        "slug": "quito",
+        "slug": "venecia",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
@@ -553,7 +553,7 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "edimburgo",
+        "slug": "quito",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
