@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T11:23:43.987663+00:00",
+  "generated_at": "2026-07-17T11:11:26.766321+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -41,11 +41,11 @@
     {
       "slug": "miami",
       "pageviews": 55,
-      "avg_engagement_time_seconds": 5.1,
-      "engagement_rate": 0.627,
-      "score_pre_rotation": 0.477,
+      "avg_engagement_time_seconds": 5.0,
+      "engagement_rate": 0.609,
+      "score_pre_rotation": 0.473,
       "rotation_penalty": 0,
-      "score": 0.63
+      "score": 0.62
     },
     {
       "slug": "madrid",
@@ -103,12 +103,12 @@
     },
     {
       "slug": "paris",
-      "pageviews": 35,
-      "avg_engagement_time_seconds": 7.5,
-      "engagement_rate": 0.617,
-      "score_pre_rotation": 0.363,
+      "pageviews": 32,
+      "avg_engagement_time_seconds": 8.0,
+      "engagement_rate": 0.595,
+      "score_pre_rotation": 0.344,
       "rotation_penalty": 0,
-      "score": 0.51
+      "score": 0.49
     },
     {
       "slug": "punta-cana",
@@ -377,34 +377,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 1320,
-        "anterior": 3693,
-        "delta_pct": -64.3
+        "actual": 1324,
+        "anterior": 3402,
+        "delta_pct": -61.1
       },
       "sessions": {
-        "actual": 1027,
-        "anterior": 3259,
-        "delta_pct": -68.5
+        "actual": 1072,
+        "anterior": 3066,
+        "delta_pct": -65.0
       },
       "avg_engagement_time": {
-        "actual": 16.4,
-        "anterior": 10.8,
-        "delta_pct": 52.0
+        "actual": 16.1,
+        "anterior": 11.3,
+        "delta_pct": 42.9
       },
       "engagement_rate": {
-        "actual": 0.267,
-        "anterior": 0.353,
-        "delta_pct": -24.3
+        "actual": 0.237,
+        "anterior": 0.381,
+        "delta_pct": -37.9
       },
       "conversions": {
         "actual": 41,
-        "anterior": 62,
-        "delta_pct": -33.9
+        "anterior": 68,
+        "delta_pct": -39.7
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-06-17",
         "2026-06-18",
         "2026-06-19",
         "2026-06-20",
@@ -433,10 +432,10 @@
         "2026-07-13",
         "2026-07-14",
         "2026-07-15",
-        "2026-07-16"
+        "2026-07-16",
+        "2026-07-17"
       ],
       "pageviews": [
-        2,
         85,
         390,
         281,
@@ -465,10 +464,10 @@
         223,
         136,
         87,
-        18
+        117,
+        4
       ],
       "sessions": [
-        2,
         79,
         250,
         254,
@@ -497,7 +496,8 @@
         191,
         124,
         79,
-        19
+        116,
+        5
       ]
     },
     "trending_up": [
@@ -518,26 +518,33 @@
       {
         "slug": "roma",
         "actual": 17,
-        "anterior": 8,
-        "delta_abs": 9,
-        "delta_pct": 112.5
+        "anterior": 7,
+        "delta_abs": 10,
+        "delta_pct": 142.9
       },
       {
-        "slug": "san-francisco",
-        "actual": 4,
-        "anterior": 0,
-        "delta_abs": 4,
-        "delta_pct": 100.0
+        "slug": "paris",
+        "actual": 8,
+        "anterior": 6,
+        "delta_abs": 2,
+        "delta_pct": 33.3
       },
       {
-        "slug": "cartagena",
+        "slug": "iguazu",
         "actual": 2,
-        "anterior": 1,
-        "delta_abs": 1,
-        "delta_pct": 100.0
+        "anterior": 2,
+        "delta_abs": 0,
+        "delta_pct": 0.0
       }
     ],
     "trending_down": [
+      {
+        "slug": "sidney",
+        "actual": 0,
+        "anterior": 3,
+        "delta_abs": -3,
+        "delta_pct": -100.0
+      },
       {
         "slug": "venecia",
         "actual": 0,
@@ -546,17 +553,10 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "quito",
+        "slug": "mendoza",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
-        "delta_pct": -100.0
-      },
-      {
-        "slug": "punta-cana",
-        "actual": 0,
-        "anterior": 6,
-        "delta_abs": -6,
         "delta_pct": -100.0
       }
     ]
