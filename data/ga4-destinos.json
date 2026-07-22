@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T11:39:46.386763+00:00",
+  "generated_at": "2026-07-22T11:39:50.207507+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -40,10 +40,10 @@
     },
     {
       "slug": "cancun",
-      "pageviews": 52,
-      "avg_engagement_time_seconds": 15.7,
-      "engagement_rate": 0.812,
-      "score_pre_rotation": 0.541,
+      "pageviews": 53,
+      "avg_engagement_time_seconds": 15.4,
+      "engagement_rate": 0.794,
+      "score_pre_rotation": 0.542,
       "rotation_penalty": 0,
       "score": 0.69
     },
@@ -156,6 +156,15 @@
       "score": 0.43
     },
     {
+      "slug": "las-vegas",
+      "pageviews": 8,
+      "avg_engagement_time_seconds": 12.1,
+      "engagement_rate": 1.0,
+      "score_pre_rotation": 0.283,
+      "rotation_penalty": 0,
+      "score": 0.43
+    },
+    {
       "slug": "sidney",
       "pageviews": 4,
       "avg_engagement_time_seconds": 25.2,
@@ -233,15 +242,6 @@
       "avg_engagement_time_seconds": 1.2,
       "engagement_rate": 0.8,
       "score_pre_rotation": 0.188,
-      "rotation_penalty": 0,
-      "score": 0.34
-    },
-    {
-      "slug": "las-vegas",
-      "pageviews": 6,
-      "avg_engagement_time_seconds": 0.0,
-      "engagement_rate": 1.0,
-      "score_pre_rotation": 0.186,
       "rotation_penalty": 0,
       "score": 0.34
     },
@@ -377,34 +377,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 2234,
-        "anterior": 2278,
-        "delta_pct": -1.9
+        "actual": 2722,
+        "anterior": 2057,
+        "delta_pct": 32.3
       },
       "sessions": {
-        "actual": 1894,
-        "anterior": 2121,
-        "delta_pct": -10.7
+        "actual": 2166,
+        "anterior": 1902,
+        "delta_pct": 13.9
       },
       "avg_engagement_time": {
-        "actual": 13.5,
-        "anterior": 12.9,
-        "delta_pct": 4.2
+        "actual": 11.5,
+        "anterior": 14.6,
+        "delta_pct": -21.3
       },
       "engagement_rate": {
-        "actual": 0.116,
+        "actual": 0.122,
         "anterior": 0.377,
-        "delta_pct": -69.1
+        "delta_pct": -67.6
       },
       "conversions": {
-        "actual": 48,
+        "actual": 50,
         "anterior": 54,
-        "delta_pct": -11.1
+        "delta_pct": -7.4
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-06-22",
         "2026-06-23",
         "2026-06-24",
         "2026-06-25",
@@ -433,10 +432,10 @@
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "pageviews": [
-        346,
         299,
         275,
         257,
@@ -465,10 +464,10 @@
         133,
         295,
         409,
-        38
+        530,
+        50
       ],
       "sessions": [
-        287,
         247,
         252,
         245,
@@ -497,36 +496,37 @@
         117,
         274,
         364,
-        33
+        309,
+        29
       ]
     },
     "trending_up": [
       {
         "slug": "roma",
         "actual": 17,
-        "anterior": 1,
-        "delta_abs": 16,
-        "delta_pct": 1600.0
+        "anterior": 3,
+        "delta_abs": 14,
+        "delta_pct": 466.7
       },
       {
         "slug": "miami",
         "actual": 22,
-        "anterior": 7,
-        "delta_abs": 15,
-        "delta_pct": 214.3
-      },
-      {
-        "slug": "iguazu",
-        "actual": 3,
-        "anterior": 0,
-        "delta_abs": 3,
-        "delta_pct": 100.0
+        "anterior": 4,
+        "delta_abs": 18,
+        "delta_pct": 450.0
       },
       {
         "slug": "aruba",
         "actual": 2,
         "anterior": 1,
         "delta_abs": 1,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "iguazu",
+        "actual": 3,
+        "anterior": 0,
+        "delta_abs": 3,
         "delta_pct": 100.0
       },
       {
@@ -539,13 +539,6 @@
     ],
     "trending_down": [
       {
-        "slug": "punta-cana",
-        "actual": 0,
-        "anterior": 3,
-        "delta_abs": -3,
-        "delta_pct": -100.0
-      },
-      {
         "slug": "bogota",
         "actual": 0,
         "anterior": 4,
@@ -553,10 +546,17 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "dubai",
+        "slug": "punta-cana",
         "actual": 0,
-        "anterior": 3,
-        "delta_abs": -3,
+        "anterior": 2,
+        "delta_abs": -2,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "san-francisco",
+        "actual": 0,
+        "anterior": 4,
+        "delta_abs": -4,
         "delta_pct": -100.0
       }
     ]
