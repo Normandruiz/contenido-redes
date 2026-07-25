@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T11:28:10.005021+00:00",
+  "generated_at": "2026-07-25T10:58:44.953098+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -327,6 +327,15 @@
       "score": 0.31
     },
     {
+      "slug": "cusco",
+      "pageviews": 16,
+      "avg_engagement_time_seconds": 0.9,
+      "engagement_rate": 0.2,
+      "score_pre_rotation": 0.131,
+      "rotation_penalty": 0,
+      "score": 0.28
+    },
+    {
       "slug": "aruba",
       "pageviews": 8,
       "avg_engagement_time_seconds": 8.5,
@@ -354,15 +363,6 @@
       "score": 0.27
     },
     {
-      "slug": "cusco",
-      "pageviews": 10,
-      "avg_engagement_time_seconds": 1.4,
-      "engagement_rate": 0.2,
-      "score_pre_rotation": 0.099,
-      "rotation_penalty": 0,
-      "score": 0.25
-    },
-    {
       "slug": "san-francisco",
       "pageviews": 4,
       "avg_engagement_time_seconds": 0.0,
@@ -377,34 +377,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 3414,
-        "anterior": 1641,
-        "delta_pct": 108.0
+        "actual": 3530,
+        "anterior": 1653,
+        "delta_pct": 113.6
       },
       "sessions": {
-        "actual": 2465,
-        "anterior": 1496,
-        "delta_pct": 64.8
+        "actual": 2487,
+        "anterior": 1405,
+        "delta_pct": 77.0
       },
       "avg_engagement_time": {
-        "actual": 10.2,
-        "anterior": 15.4,
-        "delta_pct": -33.8
+        "actual": 8.6,
+        "anterior": 17.1,
+        "delta_pct": -49.8
       },
       "engagement_rate": {
-        "actual": 0.228,
-        "anterior": 0.35,
-        "delta_pct": -34.7
+        "actual": 0.276,
+        "anterior": 0.341,
+        "delta_pct": -18.9
       },
       "conversions": {
-        "actual": 49,
-        "anterior": 47,
+        "actual": 48,
+        "anterior": 46,
         "delta_pct": 4.3
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-06-25",
         "2026-06-26",
         "2026-06-27",
         "2026-06-28",
@@ -433,10 +432,10 @@
         "2026-07-21",
         "2026-07-22",
         "2026-07-23",
-        "2026-07-24"
+        "2026-07-24",
+        "2026-07-25"
       ],
       "pageviews": [
-        257,
         256,
         245,
         260,
@@ -465,10 +464,10 @@
         530,
         491,
         305,
-        43
+        369,
+        47
       ],
       "sessions": [
-        245,
         249,
         252,
         264,
@@ -497,43 +496,44 @@
         309,
         242,
         152,
-        22
+        177,
+        28
       ]
     },
     "trending_up": [
       {
-        "slug": "roma",
-        "actual": 15,
-        "anterior": 2,
+        "slug": "nueva-york",
+        "actual": 3,
+        "anterior": 1,
+        "delta_abs": 2,
+        "delta_pct": 200.0
+      },
+      {
+        "slug": "mendoza",
+        "actual": 5,
+        "anterior": 0,
+        "delta_abs": 5,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "cusco",
+        "actual": 13,
+        "anterior": 0,
         "delta_abs": 13,
-        "delta_pct": 650.0
+        "delta_pct": 100.0
       },
       {
-        "slug": "miami",
-        "actual": 22,
-        "anterior": 6,
-        "delta_abs": 16,
-        "delta_pct": 266.7
-      },
-      {
-        "slug": "cancun",
-        "actual": 10,
-        "anterior": 4,
-        "delta_abs": 6,
-        "delta_pct": 150.0
-      },
-      {
-        "slug": "londres",
+        "slug": "aruba",
         "actual": 2,
         "anterior": 1,
         "delta_abs": 1,
         "delta_pct": 100.0
       },
       {
-        "slug": "iguazu",
-        "actual": 3,
+        "slug": "las-vegas",
+        "actual": 2,
         "anterior": 0,
-        "delta_abs": 3,
+        "delta_abs": 2,
         "delta_pct": 100.0
       }
     ],
@@ -546,17 +546,17 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "san-francisco",
+        "slug": "bariloche",
         "actual": 0,
-        "anterior": 4,
-        "delta_abs": -4,
+        "anterior": 5,
+        "delta_abs": -5,
         "delta_pct": -100.0
       },
       {
-        "slug": "bariloche",
+        "slug": "barcelona",
         "actual": 0,
-        "anterior": 6,
-        "delta_abs": -6,
+        "anterior": 3,
+        "delta_abs": -3,
         "delta_pct": -100.0
       }
     ]
