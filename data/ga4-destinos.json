@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T10:58:44.953098+00:00",
+  "generated_at": "2026-07-26T11:11:12.066519+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -94,9 +94,9 @@
     },
     {
       "slug": "rio-de-janeiro",
-      "pageviews": 19,
-      "avg_engagement_time_seconds": 23.1,
-      "engagement_rate": 0.713,
+      "pageviews": 21,
+      "avg_engagement_time_seconds": 21.1,
+      "engagement_rate": 0.727,
       "score_pre_rotation": 0.382,
       "rotation_penalty": 0,
       "score": 0.53
@@ -199,6 +199,15 @@
       "score_pre_rotation": 0.244,
       "rotation_penalty": 0,
       "score": 0.39
+    },
+    {
+      "slug": "cusco",
+      "pageviews": 22,
+      "avg_engagement_time_seconds": 0.6,
+      "engagement_rate": 0.636,
+      "score_pre_rotation": 0.23,
+      "rotation_penalty": 0,
+      "score": 0.38
     },
     {
       "slug": "tokio",
@@ -327,15 +336,6 @@
       "score": 0.31
     },
     {
-      "slug": "cusco",
-      "pageviews": 16,
-      "avg_engagement_time_seconds": 0.9,
-      "engagement_rate": 0.2,
-      "score_pre_rotation": 0.131,
-      "rotation_penalty": 0,
-      "score": 0.28
-    },
-    {
       "slug": "aruba",
       "pageviews": 8,
       "avg_engagement_time_seconds": 8.5,
@@ -377,34 +377,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 3530,
-        "anterior": 1653,
-        "delta_pct": 113.6
+        "actual": 3760,
+        "anterior": 1612,
+        "delta_pct": 133.3
       },
       "sessions": {
-        "actual": 2487,
-        "anterior": 1405,
-        "delta_pct": 77.0
+        "actual": 2544,
+        "anterior": 1309,
+        "delta_pct": 94.3
       },
       "avg_engagement_time": {
-        "actual": 8.6,
-        "anterior": 17.1,
-        "delta_pct": -49.8
+        "actual": 8.0,
+        "anterior": 16.2,
+        "delta_pct": -50.9
       },
       "engagement_rate": {
-        "actual": 0.276,
-        "anterior": 0.341,
-        "delta_pct": -18.9
+        "actual": 0.331,
+        "anterior": 0.326,
+        "delta_pct": 1.5
       },
       "conversions": {
-        "actual": 48,
-        "anterior": 46,
-        "delta_pct": 4.3
+        "actual": 44,
+        "anterior": 48,
+        "delta_pct": -8.3
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-06-26",
         "2026-06-27",
         "2026-06-28",
         "2026-06-29",
@@ -433,10 +432,10 @@
         "2026-07-22",
         "2026-07-23",
         "2026-07-24",
-        "2026-07-25"
+        "2026-07-25",
+        "2026-07-26"
       ],
       "pageviews": [
-        256,
         245,
         260,
         262,
@@ -465,10 +464,10 @@
         491,
         305,
         369,
-        47
+        455,
+        41
       ],
       "sessions": [
-        249,
         252,
         264,
         254,
@@ -497,16 +496,17 @@
         242,
         152,
         177,
-        28
+        227,
+        26
       ]
     },
     "trending_up": [
       {
-        "slug": "nueva-york",
-        "actual": 3,
-        "anterior": 1,
-        "delta_abs": 2,
-        "delta_pct": 200.0
+        "slug": "cusco",
+        "actual": 19,
+        "anterior": 7,
+        "delta_abs": 12,
+        "delta_pct": 171.4
       },
       {
         "slug": "mendoza",
@@ -516,47 +516,47 @@
         "delta_pct": 100.0
       },
       {
-        "slug": "cusco",
-        "actual": 13,
-        "anterior": 0,
-        "delta_abs": 13,
-        "delta_pct": 100.0
-      },
-      {
-        "slug": "aruba",
-        "actual": 2,
-        "anterior": 1,
-        "delta_abs": 1,
-        "delta_pct": 100.0
-      },
-      {
         "slug": "las-vegas",
         "actual": 2,
         "anterior": 0,
         "delta_abs": 2,
         "delta_pct": 100.0
+      },
+      {
+        "slug": "rio-de-janeiro",
+        "actual": 3,
+        "anterior": 2,
+        "delta_abs": 1,
+        "delta_pct": 50.0
+      },
+      {
+        "slug": "cancun",
+        "actual": 7,
+        "anterior": 6,
+        "delta_abs": 1,
+        "delta_pct": 16.7
       }
     ],
     "trending_down": [
-      {
-        "slug": "panama",
-        "actual": 0,
-        "anterior": 4,
-        "delta_abs": -4,
-        "delta_pct": -100.0
-      },
-      {
-        "slug": "bariloche",
-        "actual": 0,
-        "anterior": 5,
-        "delta_abs": -5,
-        "delta_pct": -100.0
-      },
       {
         "slug": "barcelona",
         "actual": 0,
         "anterior": 3,
         "delta_abs": -3,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "lisboa",
+        "actual": 0,
+        "anterior": 2,
+        "delta_abs": -2,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "cordoba",
+        "actual": 0,
+        "anterior": 10,
+        "delta_abs": -10,
         "delta_pct": -100.0
       }
     ]
