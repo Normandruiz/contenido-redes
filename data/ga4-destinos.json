@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T12:46:36.034966+00:00",
+  "generated_at": "2026-07-28T11:48:20.080073+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -75,6 +75,15 @@
       "score": 0.57
     },
     {
+      "slug": "nueva-york",
+      "pageviews": 9,
+      "avg_engagement_time_seconds": 38.7,
+      "engagement_rate": 0.333,
+      "score_pre_rotation": 0.42,
+      "rotation_penalty": 0,
+      "score": 0.57
+    },
+    {
       "slug": "cordoba",
       "pageviews": 36,
       "avg_engagement_time_seconds": 11.4,
@@ -100,15 +109,6 @@
       "score_pre_rotation": 0.402,
       "rotation_penalty": 0,
       "score": 0.55
-    },
-    {
-      "slug": "nueva-york",
-      "pageviews": 9,
-      "avg_engagement_time_seconds": 38.7,
-      "engagement_rate": 0.167,
-      "score_pre_rotation": 0.395,
-      "rotation_penalty": 0,
-      "score": 0.54
     },
     {
       "slug": "punta-cana",
@@ -377,34 +377,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 4185,
-        "anterior": 1573,
-        "delta_pct": 166.1
+        "actual": 4718,
+        "anterior": 1483,
+        "delta_pct": 218.1
       },
       "sessions": {
-        "actual": 2668,
-        "anterior": 1246,
-        "delta_pct": 114.1
+        "actual": 2868,
+        "anterior": 1132,
+        "delta_pct": 153.4
       },
       "avg_engagement_time": {
-        "actual": 6.9,
-        "anterior": 16.8,
-        "delta_pct": -58.8
+        "actual": 7.2,
+        "anterior": 17.0,
+        "delta_pct": -57.9
       },
       "engagement_rate": {
-        "actual": 0.39,
-        "anterior": 0.311,
-        "delta_pct": 25.2
+        "actual": 0.441,
+        "anterior": 0.308,
+        "delta_pct": 43.0
       },
       "conversions": {
-        "actual": 45,
-        "anterior": 52,
-        "delta_pct": -13.5
+        "actual": 41,
+        "anterior": 48,
+        "delta_pct": -14.6
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-06-28",
         "2026-06-29",
         "2026-06-30",
         "2026-07-01",
@@ -433,10 +432,10 @@
         "2026-07-24",
         "2026-07-25",
         "2026-07-26",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
       "pageviews": [
-        260,
         262,
         226,
         223,
@@ -465,10 +464,10 @@
         369,
         455,
         576,
-        113
+        707,
+        75
       ],
       "sessions": [
-        264,
         254,
         238,
         164,
@@ -497,7 +496,8 @@
         177,
         227,
         279,
-        62
+        344,
+        42
       ]
     },
     "trending_up": [
@@ -516,13 +516,6 @@
         "delta_pct": 128.6
       },
       {
-        "slug": "las-vegas",
-        "actual": 2,
-        "anterior": 0,
-        "delta_abs": 2,
-        "delta_pct": 100.0
-      },
-      {
         "slug": "mendoza",
         "actual": 5,
         "anterior": 0,
@@ -530,14 +523,28 @@
         "delta_pct": 100.0
       },
       {
-        "slug": "punta-cana",
+        "slug": "las-vegas",
         "actual": 2,
-        "anterior": 1,
-        "delta_abs": 1,
+        "anterior": 0,
+        "delta_abs": 2,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "nueva-zelanda",
+        "actual": 2,
+        "anterior": 0,
+        "delta_abs": 2,
         "delta_pct": 100.0
       }
     ],
     "trending_down": [
+      {
+        "slug": "roma",
+        "actual": 0,
+        "anterior": 17,
+        "delta_abs": -17,
+        "delta_pct": -100.0
+      },
       {
         "slug": "bogota",
         "actual": 0,
@@ -546,17 +553,10 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "aruba",
+        "slug": "lisboa",
         "actual": 0,
-        "anterior": 3,
-        "delta_abs": -3,
-        "delta_pct": -100.0
-      },
-      {
-        "slug": "san-francisco",
-        "actual": 0,
-        "anterior": 4,
-        "delta_abs": -4,
+        "anterior": 2,
+        "delta_abs": -2,
         "delta_pct": -100.0
       }
     ]
