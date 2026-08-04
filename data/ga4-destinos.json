@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T12:46:33.651207+00:00",
+  "generated_at": "2026-08-04T11:52:15.936152+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -202,9 +202,9 @@
     },
     {
       "slug": "sao-paulo",
-      "pageviews": 25,
-      "avg_engagement_time_seconds": 7.6,
-      "engagement_rate": 0.36,
+      "pageviews": 26,
+      "avg_engagement_time_seconds": 7.3,
+      "engagement_rate": 0.346,
       "score_pre_rotation": 0.221,
       "rotation_penalty": 0,
       "score": 0.37
@@ -364,12 +364,21 @@
     },
     {
       "slug": "aruba",
-      "pageviews": 8,
-      "avg_engagement_time_seconds": 8.5,
-      "engagement_rate": 0.125,
-      "score_pre_rotation": 0.121,
+      "pageviews": 9,
+      "avg_engagement_time_seconds": 7.6,
+      "engagement_rate": 0.111,
+      "score_pre_rotation": 0.116,
       "rotation_penalty": 0,
       "score": 0.27
+    },
+    {
+      "slug": "maceio",
+      "pageviews": 3,
+      "avg_engagement_time_seconds": 0.0,
+      "engagement_rate": 0.667,
+      "score_pre_rotation": 0.113,
+      "rotation_penalty": 0,
+      "score": 0.26
     },
     {
       "slug": "montevideo",
@@ -395,34 +404,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 6197,
-        "anterior": 2232,
-        "delta_pct": 177.6
+        "actual": 5933,
+        "anterior": 2726,
+        "delta_pct": 117.6
       },
       "sessions": {
-        "actual": 3748,
-        "anterior": 1894,
-        "delta_pct": 97.9
+        "actual": 3689,
+        "anterior": 2170,
+        "delta_pct": 70.0
       },
       "avg_engagement_time": {
-        "actual": 8.7,
-        "anterior": 13.6,
-        "delta_pct": -35.8
+        "actual": 9.6,
+        "anterior": 12.4,
+        "delta_pct": -22.0
       },
       "engagement_rate": {
-        "actual": 0.628,
-        "anterior": 0.138,
-        "delta_pct": 354.7
+        "actual": 0.611,
+        "anterior": 0.159,
+        "delta_pct": 285.1
       },
       "conversions": {
-        "actual": 40,
+        "actual": 34,
         "anterior": 50,
-        "delta_pct": -20.0
+        "delta_pct": -32.0
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-07-05",
         "2026-07-06",
         "2026-07-07",
         "2026-07-08",
@@ -451,10 +459,10 @@
         "2026-07-31",
         "2026-08-01",
         "2026-08-02",
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-04"
       ],
       "pageviews": [
-        24,
         37,
         36,
         54,
@@ -483,10 +491,10 @@
         315,
         393,
         292,
-        61
+        293,
+        34
       ],
       "sessions": [
-        21,
         27,
         33,
         33,
@@ -515,7 +523,8 @@
         203,
         363,
         282,
-        65
+        283,
+        32
       ]
     },
     "trending_up": [
@@ -527,28 +536,28 @@
         "delta_pct": 214.3
       },
       {
-        "slug": "rio-de-janeiro",
-        "actual": 3,
-        "anterior": 1,
-        "delta_abs": 2,
-        "delta_pct": 200.0
-      },
-      {
         "slug": "cancun",
         "actual": 14,
-        "anterior": 5,
-        "delta_abs": 9,
-        "delta_pct": 180.0
+        "anterior": 6,
+        "delta_abs": 8,
+        "delta_pct": 133.3
       },
       {
-        "slug": "bariloche",
+        "slug": "amsterdam",
         "actual": 2,
         "anterior": 0,
         "delta_abs": 2,
         "delta_pct": 100.0
       },
       {
-        "slug": "recife",
+        "slug": "cartagena",
+        "actual": 2,
+        "anterior": 1,
+        "delta_abs": 1,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "bariloche",
         "actual": 2,
         "anterior": 0,
         "delta_abs": 2,
@@ -564,17 +573,17 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "londres",
+        "slug": "iguazu",
         "actual": 0,
-        "anterior": 2,
-        "delta_abs": -2,
+        "anterior": 3,
+        "delta_abs": -3,
         "delta_pct": -100.0
       },
       {
-        "slug": "aruba",
+        "slug": "santiago",
         "actual": 0,
-        "anterior": 2,
-        "delta_abs": -2,
+        "anterior": 3,
+        "delta_abs": -3,
         "delta_pct": -100.0
       }
     ]
