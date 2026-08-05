@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T11:52:15.936152+00:00",
+  "generated_at": "2026-08-05T11:48:42.410004+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -22,12 +22,12 @@
     },
     {
       "slug": "madrid",
-      "pageviews": 38,
-      "avg_engagement_time_seconds": 38.5,
-      "engagement_rate": 0.598,
-      "score_pre_rotation": 0.56,
+      "pageviews": 39,
+      "avg_engagement_time_seconds": 39.3,
+      "engagement_rate": 0.61,
+      "score_pre_rotation": 0.572,
       "rotation_penalty": 0,
-      "score": 0.71
+      "score": 0.72
     },
     {
       "slug": "roma",
@@ -404,34 +404,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 5933,
-        "anterior": 2726,
-        "delta_pct": 117.6
+        "actual": 5694,
+        "anterior": 3163,
+        "delta_pct": 80.0
       },
       "sessions": {
-        "actual": 3689,
-        "anterior": 2170,
-        "delta_pct": 70.0
+        "actual": 3701,
+        "anterior": 2379,
+        "delta_pct": 55.6
       },
       "avg_engagement_time": {
-        "actual": 9.6,
-        "anterior": 12.4,
-        "delta_pct": -22.0
+        "actual": 10.4,
+        "anterior": 10.9,
+        "delta_pct": -4.2
       },
       "engagement_rate": {
-        "actual": 0.611,
-        "anterior": 0.159,
-        "delta_pct": 285.1
+        "actual": 0.573,
+        "anterior": 0.185,
+        "delta_pct": 210.1
       },
       "conversions": {
-        "actual": 34,
-        "anterior": 50,
-        "delta_pct": -32.0
+        "actual": 33,
+        "anterior": 53,
+        "delta_pct": -37.7
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-07-06",
         "2026-07-07",
         "2026-07-08",
         "2026-07-09",
@@ -460,10 +459,10 @@
         "2026-08-01",
         "2026-08-02",
         "2026-08-03",
-        "2026-08-04"
+        "2026-08-04",
+        "2026-08-05"
       ],
       "pageviews": [
-        37,
         36,
         54,
         14,
@@ -492,10 +491,10 @@
         393,
         292,
         293,
-        34
+        258,
+        28
       ],
       "sessions": [
-        27,
         33,
         33,
         13,
@@ -524,7 +523,8 @@
         363,
         282,
         283,
-        32
+        257,
+        29
       ]
     },
     "trending_up": [
@@ -536,13 +536,6 @@
         "delta_pct": 214.3
       },
       {
-        "slug": "cancun",
-        "actual": 14,
-        "anterior": 6,
-        "delta_abs": 8,
-        "delta_pct": 133.3
-      },
-      {
         "slug": "amsterdam",
         "actual": 2,
         "anterior": 0,
@@ -550,14 +543,21 @@
         "delta_pct": 100.0
       },
       {
-        "slug": "cartagena",
-        "actual": 2,
-        "anterior": 1,
-        "delta_abs": 1,
+        "slug": "bali",
+        "actual": 3,
+        "anterior": 0,
+        "delta_abs": 3,
         "delta_pct": 100.0
       },
       {
         "slug": "bariloche",
+        "actual": 2,
+        "anterior": 0,
+        "delta_abs": 2,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "recife",
         "actual": 2,
         "anterior": 0,
         "delta_abs": 2,
@@ -568,15 +568,8 @@
       {
         "slug": "paris",
         "actual": 0,
-        "anterior": 8,
-        "delta_abs": -8,
-        "delta_pct": -100.0
-      },
-      {
-        "slug": "iguazu",
-        "actual": 0,
-        "anterior": 3,
-        "delta_abs": -3,
+        "anterior": 4,
+        "delta_abs": -4,
         "delta_pct": -100.0
       },
       {
@@ -584,6 +577,13 @@
         "actual": 0,
         "anterior": 3,
         "delta_abs": -3,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "londres",
+        "actual": 0,
+        "anterior": 2,
+        "delta_abs": -2,
         "delta_pct": -100.0
       }
     ]
