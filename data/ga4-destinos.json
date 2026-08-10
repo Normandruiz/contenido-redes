@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T10:19:31.526918+00:00",
+  "generated_at": "2026-08-10T10:53:30.753487+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -40,12 +40,12 @@
     },
     {
       "slug": "cancun",
-      "pageviews": 68,
+      "pageviews": 67,
       "avg_engagement_time_seconds": 13.0,
-      "engagement_rate": 0.766,
-      "score_pre_rotation": 0.506,
+      "engagement_rate": 0.763,
+      "score_pre_rotation": 0.501,
       "rotation_penalty": 0,
-      "score": 0.66
+      "score": 0.65
     },
     {
       "slug": "miami",
@@ -85,12 +85,12 @@
     },
     {
       "slug": "rio-de-janeiro",
-      "pageviews": 21,
-      "avg_engagement_time_seconds": 21.1,
-      "engagement_rate": 0.727,
-      "score_pre_rotation": 0.366,
+      "pageviews": 22,
+      "avg_engagement_time_seconds": 20.1,
+      "engagement_rate": 0.69,
+      "score_pre_rotation": 0.357,
       "rotation_penalty": 0,
-      "score": 0.52
+      "score": 0.51
     },
     {
       "slug": "bariloche",
@@ -413,34 +413,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 5023,
-        "anterior": 4295,
-        "delta_pct": 16.9
+        "actual": 4577,
+        "anterior": 4779,
+        "delta_pct": -4.2
       },
       "sessions": {
-        "actual": 3859,
-        "anterior": 2797,
-        "delta_pct": 38.0
+        "actual": 3763,
+        "anterior": 2950,
+        "delta_pct": 27.6
       },
       "avg_engagement_time": {
-        "actual": 14.6,
-        "anterior": 7.4,
-        "delta_pct": 98.0
+        "actual": 15.5,
+        "anterior": 7.3,
+        "delta_pct": 114.0
       },
       "engagement_rate": {
-        "actual": 0.401,
-        "anterior": 0.397,
-        "delta_pct": 1.0
+        "actual": 0.36,
+        "anterior": 0.455,
+        "delta_pct": -20.8
       },
       "conversions": {
-        "actual": 39,
-        "anterior": 49,
-        "delta_pct": -20.4
+        "actual": 36,
+        "anterior": 47,
+        "delta_pct": -23.4
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-07-11",
         "2026-07-12",
         "2026-07-13",
         "2026-07-14",
@@ -469,10 +468,10 @@
         "2026-08-06",
         "2026-08-07",
         "2026-08-08",
-        "2026-08-09"
+        "2026-08-09",
+        "2026-08-10"
       ],
       "pageviews": [
-        257,
         219,
         223,
         136,
@@ -500,11 +499,11 @@
         282,
         241,
         294,
-        210,
-        35
+        227,
+        250,
+        29
       ],
       "sessions": [
-        161,
         168,
         191,
         124,
@@ -533,24 +532,11 @@
         236,
         275,
         213,
-        29
+        244,
+        33
       ]
     },
     "trending_up": [
-      {
-        "slug": "nueva-zelanda",
-        "actual": 2,
-        "anterior": 0,
-        "delta_abs": 2,
-        "delta_pct": 100.0
-      },
-      {
-        "slug": "cartagena",
-        "actual": 2,
-        "anterior": 0,
-        "delta_abs": 2,
-        "delta_pct": 100.0
-      },
       {
         "slug": "bali",
         "actual": 3,
@@ -566,21 +552,28 @@
         "delta_pct": 100.0
       },
       {
+        "slug": "cartagena",
+        "actual": 2,
+        "anterior": 0,
+        "delta_abs": 2,
+        "delta_pct": 100.0
+      },
+      {
         "slug": "miami",
-        "actual": 24,
-        "anterior": 16,
+        "actual": 22,
+        "anterior": 14,
         "delta_abs": 8,
-        "delta_pct": 50.0
+        "delta_pct": 57.1
+      },
+      {
+        "slug": "cancun",
+        "actual": 9,
+        "anterior": 9,
+        "delta_abs": 0,
+        "delta_pct": 0.0
       }
     ],
     "trending_down": [
-      {
-        "slug": "santiago",
-        "actual": 0,
-        "anterior": 3,
-        "delta_abs": -3,
-        "delta_pct": -100.0
-      },
       {
         "slug": "recife",
         "actual": 0,
@@ -589,10 +582,17 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "rio-de-janeiro",
+        "slug": "mendoza",
         "actual": 0,
-        "anterior": 3,
-        "delta_abs": -3,
+        "anterior": 5,
+        "delta_abs": -5,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "bariloche",
+        "actual": 0,
+        "anterior": 2,
+        "delta_abs": -2,
         "delta_pct": -100.0
       }
     ]
