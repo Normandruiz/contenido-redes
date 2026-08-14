@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T10:48:38.712760+00:00",
+  "generated_at": "2026-08-14T10:44:44.085319+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -22,30 +22,30 @@
     },
     {
       "slug": "madrid",
-      "pageviews": 39,
-      "avg_engagement_time_seconds": 39.3,
-      "engagement_rate": 0.61,
-      "score_pre_rotation": 0.566,
+      "pageviews": 37,
+      "avg_engagement_time_seconds": 39.7,
+      "engagement_rate": 0.602,
+      "score_pre_rotation": 0.56,
       "rotation_penalty": 0,
-      "score": 0.72
+      "score": 0.71
     },
     {
       "slug": "roma",
-      "pageviews": 35,
-      "avg_engagement_time_seconds": 37.8,
-      "engagement_rate": 0.544,
-      "score_pre_rotation": 0.528,
+      "pageviews": 34,
+      "avg_engagement_time_seconds": 36.2,
+      "engagement_rate": 0.523,
+      "score_pre_rotation": 0.508,
       "rotation_penalty": 0,
-      "score": 0.68
+      "score": 0.66
     },
     {
       "slug": "cancun",
-      "pageviews": 62,
-      "avg_engagement_time_seconds": 14.0,
-      "engagement_rate": 0.754,
-      "score_pre_rotation": 0.485,
+      "pageviews": 61,
+      "avg_engagement_time_seconds": 14.3,
+      "engagement_rate": 0.75,
+      "score_pre_rotation": 0.483,
       "rotation_penalty": 0,
-      "score": 0.64
+      "score": 0.63
     },
     {
       "slug": "miami",
@@ -85,9 +85,9 @@
     },
     {
       "slug": "rio-de-janeiro",
-      "pageviews": 23,
-      "avg_engagement_time_seconds": 19.9,
-      "engagement_rate": 0.704,
+      "pageviews": 22,
+      "avg_engagement_time_seconds": 20.8,
+      "engagement_rate": 0.688,
       "score_pre_rotation": 0.36,
       "rotation_penalty": 0,
       "score": 0.51
@@ -121,21 +121,12 @@
     },
     {
       "slug": "punta-cana",
-      "pageviews": 20,
-      "avg_engagement_time_seconds": 14.7,
-      "engagement_rate": 0.75,
+      "pageviews": 18,
+      "avg_engagement_time_seconds": 16.0,
+      "engagement_rate": 0.741,
       "score_pre_rotation": 0.313,
       "rotation_penalty": 0,
       "score": 0.46
-    },
-    {
-      "slug": "paris",
-      "pageviews": 32,
-      "avg_engagement_time_seconds": 8.0,
-      "engagement_rate": 0.595,
-      "score_pre_rotation": 0.287,
-      "rotation_penalty": 0,
-      "score": 0.44
     },
     {
       "slug": "bogota",
@@ -154,6 +145,15 @@
       "score_pre_rotation": 0.291,
       "rotation_penalty": 0,
       "score": 0.44
+    },
+    {
+      "slug": "paris",
+      "pageviews": 30,
+      "avg_engagement_time_seconds": 7.7,
+      "engagement_rate": 0.592,
+      "score_pre_rotation": 0.276,
+      "rotation_penalty": 0,
+      "score": 0.43
     },
     {
       "slug": "las-vegas",
@@ -257,9 +257,9 @@
     {
       "slug": "amsterdam",
       "pageviews": 7,
-      "avg_engagement_time_seconds": 11.4,
-      "engagement_rate": 0.429,
-      "score_pre_rotation": 0.184,
+      "avg_engagement_time_seconds": 11.7,
+      "engagement_rate": 0.357,
+      "score_pre_rotation": 0.176,
       "rotation_penalty": 0,
       "score": 0.33
     },
@@ -309,15 +309,6 @@
       "score": 0.32
     },
     {
-      "slug": "lisboa",
-      "pageviews": 12,
-      "avg_engagement_time_seconds": 3.9,
-      "engagement_rate": 0.542,
-      "score_pre_rotation": 0.163,
-      "rotation_penalty": 0,
-      "score": 0.31
-    },
-    {
       "slug": "barcelona",
       "pageviews": 12,
       "avg_engagement_time_seconds": 6.3,
@@ -345,15 +336,6 @@
       "score": 0.29
     },
     {
-      "slug": "venecia",
-      "pageviews": 3,
-      "avg_engagement_time_seconds": 9.3,
-      "engagement_rate": 0.333,
-      "score_pre_rotation": 0.136,
-      "rotation_penalty": 0,
-      "score": 0.29
-    },
-    {
       "slug": "toronto",
       "pageviews": 4,
       "avg_engagement_time_seconds": 14.0,
@@ -361,6 +343,15 @@
       "score_pre_rotation": 0.127,
       "rotation_penalty": 0,
       "score": 0.28
+    },
+    {
+      "slug": "lisboa",
+      "pageviews": 11,
+      "avg_engagement_time_seconds": 0.2,
+      "engagement_rate": 0.5,
+      "score_pre_rotation": 0.123,
+      "rotation_penalty": 0,
+      "score": 0.27
     },
     {
       "slug": "aruba",
@@ -422,34 +413,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 3614,
-        "anterior": 6135,
-        "delta_pct": -41.1
+        "actual": 3556,
+        "anterior": 6288,
+        "delta_pct": -43.4
       },
       "sessions": {
-        "actual": 3369,
-        "anterior": 3730,
-        "delta_pct": -9.7
+        "actual": 3419,
+        "anterior": 3793,
+        "delta_pct": -9.9
       },
       "avg_engagement_time": {
-        "actual": 20.1,
-        "anterior": 7.6,
-        "delta_pct": 164.6
+        "actual": 21.6,
+        "anterior": 7.7,
+        "delta_pct": 179.2
       },
       "engagement_rate": {
-        "actual": 0.314,
-        "anterior": 0.553,
-        "delta_pct": -43.1
+        "actual": 0.323,
+        "anterior": 0.576,
+        "delta_pct": -43.9
       },
       "conversions": {
-        "actual": 33,
+        "actual": 34,
         "anterior": 43,
-        "delta_pct": -23.3
+        "delta_pct": -20.9
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-07-15",
         "2026-07-16",
         "2026-07-17",
         "2026-07-18",
@@ -478,10 +468,10 @@
         "2026-08-10",
         "2026-08-11",
         "2026-08-12",
-        "2026-08-13"
+        "2026-08-13",
+        "2026-08-14"
       ],
       "pageviews": [
-        87,
         124,
         162,
         133,
@@ -509,11 +499,11 @@
         266,
         273,
         257,
-        209,
-        14
+        236,
+        222,
+        22
       ],
       "sessions": [
-        79,
         122,
         140,
         117,
@@ -541,18 +531,12 @@
         244,
         273,
         237,
-        220,
-        14
+        230,
+        235,
+        22
       ]
     },
     "trending_up": [
-      {
-        "slug": "bali",
-        "actual": 3,
-        "anterior": 0,
-        "delta_abs": 3,
-        "delta_pct": 100.0
-      },
       {
         "slug": "amsterdam",
         "actual": 3,
@@ -568,28 +552,28 @@
         "delta_pct": 100.0
       },
       {
-        "slug": "miami",
-        "actual": 22,
-        "anterior": 13,
-        "delta_abs": 9,
-        "delta_pct": 69.2
-      },
-      {
-        "slug": "cartagena",
-        "actual": 2,
-        "anterior": 2,
+        "slug": "bali",
+        "actual": 3,
+        "anterior": 3,
         "delta_abs": 0,
         "delta_pct": 0.0
+      },
+      {
+        "slug": "miami",
+        "actual": 22,
+        "anterior": 25,
+        "delta_abs": -3,
+        "delta_pct": -12.0
+      },
+      {
+        "slug": "rio-de-janeiro",
+        "actual": 2,
+        "anterior": 3,
+        "delta_abs": -1,
+        "delta_pct": -33.3
       }
     ],
     "trending_down": [
-      {
-        "slug": "mendoza",
-        "actual": 0,
-        "anterior": 5,
-        "delta_abs": -5,
-        "delta_pct": -100.0
-      },
       {
         "slug": "cusco",
         "actual": 0,
@@ -598,7 +582,14 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "recife",
+        "slug": "nueva-york",
+        "actual": 0,
+        "anterior": 3,
+        "delta_abs": -3,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "bariloche",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
