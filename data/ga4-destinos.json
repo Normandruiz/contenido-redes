@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T10:16:39.936739+00:00",
+  "generated_at": "2026-08-22T10:09:46.789592+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -14,9 +14,9 @@
     {
       "slug": "madrid",
       "pageviews": 55,
-      "avg_engagement_time_seconds": 42.6,
-      "engagement_rate": 0.54,
-      "score_pre_rotation": 0.506,
+      "avg_engagement_time_seconds": 42.7,
+      "engagement_rate": 0.564,
+      "score_pre_rotation": 0.511,
       "rotation_penalty": 0,
       "score": 0.66
     },
@@ -93,15 +93,6 @@
       "score": 0.44
     },
     {
-      "slug": "nueva-york",
-      "pageviews": 9,
-      "avg_engagement_time_seconds": 38.7,
-      "engagement_rate": 0.333,
-      "score_pre_rotation": 0.29,
-      "rotation_penalty": 0,
-      "score": 0.44
-    },
-    {
       "slug": "cordoba",
       "pageviews": 32,
       "avg_engagement_time_seconds": 12.4,
@@ -148,9 +139,9 @@
     },
     {
       "slug": "tokio",
-      "pageviews": 13,
-      "avg_engagement_time_seconds": 16.5,
-      "engagement_rate": 0.675,
+      "pageviews": 12,
+      "avg_engagement_time_seconds": 17.8,
+      "engagement_rate": 0.65,
       "score_pre_rotation": 0.236,
       "rotation_penalty": 0,
       "score": 0.39
@@ -219,15 +210,6 @@
       "score": 0.35
     },
     {
-      "slug": "cartagena",
-      "pageviews": 10,
-      "avg_engagement_time_seconds": 6.0,
-      "engagement_rate": 0.883,
-      "score_pre_rotation": 0.2,
-      "rotation_penalty": 0,
-      "score": 0.35
-    },
-    {
       "slug": "florianopolis",
       "pageviews": 5,
       "avg_engagement_time_seconds": 17.6,
@@ -235,6 +217,15 @@
       "score_pre_rotation": 0.202,
       "rotation_penalty": 0,
       "score": 0.35
+    },
+    {
+      "slug": "cartagena",
+      "pageviews": 9,
+      "avg_engagement_time_seconds": 5.1,
+      "engagement_rate": 0.867,
+      "score_pre_rotation": 0.19,
+      "rotation_penalty": 0,
+      "score": 0.34
     },
     {
       "slug": "dubrovnik",
@@ -381,6 +372,15 @@
       "score": 0.24
     },
     {
+      "slug": "nueva-york",
+      "pageviews": 8,
+      "avg_engagement_time_seconds": 3.8,
+      "engagement_rate": 0.25,
+      "score_pre_rotation": 0.087,
+      "rotation_penalty": 0,
+      "score": 0.24
+    },
+    {
       "slug": "berlin",
       "pageviews": 3,
       "avg_engagement_time_seconds": 1.0,
@@ -413,34 +413,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 4735,
-        "anterior": 5809,
-        "delta_pct": -18.5
+        "actual": 4825,
+        "anterior": 5581,
+        "delta_pct": -13.5
       },
       "sessions": {
-        "actual": 2988,
-        "anterior": 4123,
-        "delta_pct": -27.5
+        "actual": 2913,
+        "anterior": 4109,
+        "delta_pct": -29.1
       },
       "avg_engagement_time": {
-        "actual": 21.4,
-        "anterior": 12.5,
-        "delta_pct": 70.9
+        "actual": 21.3,
+        "anterior": 13.4,
+        "delta_pct": 58.6
       },
       "engagement_rate": {
-        "actual": 0.435,
-        "anterior": 0.529,
-        "delta_pct": -17.8
+        "actual": 0.46,
+        "anterior": 0.492,
+        "delta_pct": -6.6
       },
       "conversions": {
-        "actual": 57,
-        "anterior": 39,
-        "delta_pct": 46.2
+        "actual": 60,
+        "anterior": 38,
+        "delta_pct": 57.9
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-07-23",
         "2026-07-24",
         "2026-07-25",
         "2026-07-26",
@@ -469,10 +468,10 @@
         "2026-08-18",
         "2026-08-19",
         "2026-08-20",
-        "2026-08-21"
+        "2026-08-21",
+        "2026-08-22"
       ],
       "pageviews": [
-        305,
         369,
         455,
         576,
@@ -500,11 +499,11 @@
         827,
         647,
         461,
-        309,
-        41
+        361,
+        270,
+        36
       ],
       "sessions": [
-        152,
         177,
         227,
         279,
@@ -532,8 +531,9 @@
         261,
         269,
         185,
-        112,
-        14
+        121,
+        127,
+        16
       ]
     },
     "trending_up": [
@@ -566,26 +566,26 @@
         "delta_pct": 200.0
       },
       {
-        "slug": "iguazu",
+        "slug": "tokio",
         "actual": 2,
-        "anterior": 0,
-        "delta_abs": 2,
+        "anterior": 1,
+        "delta_abs": 1,
         "delta_pct": 100.0
       }
     ],
     "trending_down": [
       {
-        "slug": "nueva-zelanda",
+        "slug": "nueva-york",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
         "delta_pct": -100.0
       },
       {
-        "slug": "nueva-york",
+        "slug": "bali",
         "actual": 0,
-        "anterior": 2,
-        "delta_abs": -2,
+        "anterior": 3,
+        "delta_abs": -3,
         "delta_pct": -100.0
       },
       {
