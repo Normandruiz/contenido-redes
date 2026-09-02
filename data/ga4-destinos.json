@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T14:20:46.537489+00:00",
+  "generated_at": "2026-09-02T13:54:31.076835+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -13,12 +13,12 @@
   "destinos": [
     {
       "slug": "madrid",
-      "pageviews": 82,
-      "avg_engagement_time_seconds": 32.0,
-      "engagement_rate": 0.631,
-      "score_pre_rotation": 0.566,
+      "pageviews": 81,
+      "avg_engagement_time_seconds": 32.3,
+      "engagement_rate": 0.626,
+      "score_pre_rotation": 0.563,
       "rotation_penalty": 0,
-      "score": 0.72
+      "score": 0.71
     },
     {
       "slug": "hong-kong",
@@ -40,12 +40,12 @@
     },
     {
       "slug": "cancun",
-      "pageviews": 79,
-      "avg_engagement_time_seconds": 8.6,
-      "engagement_rate": 0.637,
-      "score_pre_rotation": 0.43,
+      "pageviews": 77,
+      "avg_engagement_time_seconds": 8.9,
+      "engagement_rate": 0.63,
+      "score_pre_rotation": 0.423,
       "rotation_penalty": 0,
-      "score": 0.58
+      "score": 0.57
     },
     {
       "slug": "roma",
@@ -94,10 +94,10 @@
     },
     {
       "slug": "salta",
-      "pageviews": 21,
-      "avg_engagement_time_seconds": 21.1,
-      "engagement_rate": 0.667,
-      "score_pre_rotation": 0.29,
+      "pageviews": 20,
+      "avg_engagement_time_seconds": 22.2,
+      "engagement_rate": 0.684,
+      "score_pre_rotation": 0.295,
       "rotation_penalty": 0,
       "score": 0.44
     },
@@ -175,10 +175,10 @@
     },
     {
       "slug": "mendoza",
-      "pageviews": 13,
-      "avg_engagement_time_seconds": 19.4,
-      "engagement_rate": 0.446,
-      "score_pre_rotation": 0.219,
+      "pageviews": 12,
+      "avg_engagement_time_seconds": 21.0,
+      "engagement_rate": 0.4,
+      "score_pre_rotation": 0.217,
       "rotation_penalty": 0,
       "score": 0.37
     },
@@ -204,10 +204,10 @@
       "slug": "amsterdam",
       "pageviews": 15,
       "avg_engagement_time_seconds": 11.0,
-      "engagement_rate": 0.648,
-      "score_pre_rotation": 0.211,
+      "engagement_rate": 0.583,
+      "score_pre_rotation": 0.201,
       "rotation_penalty": 0,
-      "score": 0.36
+      "score": 0.35
     },
     {
       "slug": "los-angeles",
@@ -228,20 +228,20 @@
       "score": 0.34
     },
     {
-      "slug": "cartagena",
-      "pageviews": 9,
-      "avg_engagement_time_seconds": 5.1,
-      "engagement_rate": 0.867,
-      "score_pre_rotation": 0.19,
-      "rotation_penalty": 0,
-      "score": 0.34
-    },
-    {
       "slug": "dubrovnik",
       "pageviews": 8,
       "avg_engagement_time_seconds": 0.0,
       "engagement_rate": 1.0,
       "score_pre_rotation": 0.179,
+      "rotation_penalty": 0,
+      "score": 0.33
+    },
+    {
+      "slug": "cartagena",
+      "pageviews": 6,
+      "avg_engagement_time_seconds": 7.7,
+      "engagement_rate": 0.8,
+      "score_pre_rotation": 0.183,
       "rotation_penalty": 0,
       "score": 0.33
     },
@@ -449,34 +449,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 9277,
-        "anterior": 4741,
-        "delta_pct": 95.7
+        "actual": 9572,
+        "anterior": 4920,
+        "delta_pct": 94.6
       },
       "sessions": {
-        "actual": 3492,
-        "anterior": 3457,
-        "delta_pct": 1.0
+        "actual": 3610,
+        "anterior": 3373,
+        "delta_pct": 7.0
       },
       "avg_engagement_time": {
-        "actual": 12.1,
-        "anterior": 22.1,
-        "delta_pct": -45.5
+        "actual": 11.6,
+        "anterior": 22.0,
+        "delta_pct": -47.3
       },
       "engagement_rate": {
-        "actual": 0.87,
-        "anterior": 0.445,
-        "delta_pct": 95.6
+        "actual": 0.872,
+        "anterior": 0.483,
+        "delta_pct": 80.5
       },
       "conversions": {
-        "actual": 96,
-        "anterior": 50,
-        "delta_pct": 92.0
+        "actual": 97,
+        "anterior": 54,
+        "delta_pct": 79.6
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-08-03",
         "2026-08-04",
         "2026-08-05",
         "2026-08-06",
@@ -505,10 +504,10 @@
         "2026-08-29",
         "2026-08-30",
         "2026-08-31",
-        "2026-09-01"
+        "2026-09-01",
+        "2026-09-02"
       ],
       "pageviews": [
-        293,
         258,
         282,
         241,
@@ -537,10 +536,10 @@
         575,
         525,
         1015,
-        136
+        768,
+        124
       ],
       "sessions": [
-        283,
         257,
         269,
         236,
@@ -569,7 +568,8 @@
         245,
         206,
         246,
-        64
+        311,
+        56
       ]
     },
     "trending_up": [
@@ -590,16 +590,9 @@
       {
         "slug": "paris",
         "actual": 25,
-        "anterior": 2,
-        "delta_abs": 23,
-        "delta_pct": 1150.0
-      },
-      {
-        "slug": "hong-kong",
-        "actual": 6,
-        "anterior": 1,
-        "delta_abs": 5,
-        "delta_pct": 500.0
+        "anterior": 3,
+        "delta_abs": 22,
+        "delta_pct": 733.3
       },
       {
         "slug": "los-angeles",
@@ -607,6 +600,13 @@
         "anterior": 1,
         "delta_abs": 3,
         "delta_pct": 300.0
+      },
+      {
+        "slug": "madrid",
+        "actual": 38,
+        "anterior": 15,
+        "delta_abs": 23,
+        "delta_pct": 153.3
       }
     ],
     "trending_down": [
@@ -625,11 +625,11 @@
         "delta_pct": -80.0
       },
       {
-        "slug": "amsterdam",
-        "actual": 6,
-        "anterior": 5,
-        "delta_abs": 1,
-        "delta_pct": 20.0
+        "slug": "punta-cana",
+        "actual": 2,
+        "anterior": 3,
+        "delta_abs": -1,
+        "delta_pct": -33.3
       }
     ]
   }
