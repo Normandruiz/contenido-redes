@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T18:53:25.722095+00:00",
+  "generated_at": "2026-10-06T16:19:01.240743+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -192,6 +192,15 @@
       "score": 0.36
     },
     {
+      "slug": "paris",
+      "pageviews": 34,
+      "avg_engagement_time_seconds": 6.0,
+      "engagement_rate": 0.672,
+      "score_pre_rotation": 0.214,
+      "rotation_penalty": 0,
+      "score": 0.36
+    },
+    {
       "slug": "amsterdam",
       "pageviews": 23,
       "avg_engagement_time_seconds": 6.4,
@@ -199,15 +208,6 @@
       "score_pre_rotation": 0.208,
       "rotation_penalty": 0,
       "score": 0.36
-    },
-    {
-      "slug": "paris",
-      "pageviews": 38,
-      "avg_engagement_time_seconds": 5.4,
-      "engagement_rate": 0.548,
-      "score_pre_rotation": 0.199,
-      "rotation_penalty": 0,
-      "score": 0.35
     },
     {
       "slug": "viedma",
@@ -418,12 +418,12 @@
     },
     {
       "slug": "ciudad-del-cabo",
-      "pageviews": 3,
-      "avg_engagement_time_seconds": 7.3,
+      "pageviews": 4,
+      "avg_engagement_time_seconds": 5.8,
       "engagement_rate": 0.0,
-      "score_pre_rotation": 0.059,
+      "score_pre_rotation": 0.05,
       "rotation_penalty": 0,
-      "score": 0.21
+      "score": 0.2
     }
   ],
   "evolucion": {
@@ -431,34 +431,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 2469,
-        "anterior": 6801,
-        "delta_pct": -63.7
+        "actual": 2282,
+        "anterior": 6244,
+        "delta_pct": -63.5
       },
       "sessions": {
-        "actual": 1960,
-        "anterior": 3814,
-        "delta_pct": -48.6
+        "actual": 1762,
+        "anterior": 3718,
+        "delta_pct": -52.6
       },
       "avg_engagement_time": {
-        "actual": 28.3,
-        "anterior": 19.7,
-        "delta_pct": 43.5
+        "actual": 29.5,
+        "anterior": 20.8,
+        "delta_pct": 42.1
       },
       "engagement_rate": {
-        "actual": 0.503,
-        "anterior": 0.668,
-        "delta_pct": -24.8
+        "actual": 0.508,
+        "anterior": 0.632,
+        "delta_pct": -19.6
       },
       "conversions": {
-        "actual": 11,
-        "anterior": 126,
-        "delta_pct": -91.3
+        "actual": 0,
+        "anterior": 115,
+        "delta_pct": -100.0
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-09-06",
         "2026-09-07",
         "2026-09-08",
         "2026-09-09",
@@ -487,10 +486,10 @@
         "2026-10-02",
         "2026-10-03",
         "2026-10-04",
-        "2026-10-05"
+        "2026-10-05",
+        "2026-10-06"
       ],
       "pageviews": [
-        460,
         2582,
         856,
         849,
@@ -519,10 +518,10 @@
         91,
         114,
         123,
-        69
+        153,
+        28
       ],
       "sessions": [
-        189,
         468,
         370,
         340,
@@ -551,24 +550,11 @@
         51,
         65,
         93,
-        50
+        103,
+        23
       ]
     },
     "trending_up": [
-      {
-        "slug": "sydney",
-        "actual": 2,
-        "anterior": 1,
-        "delta_abs": 1,
-        "delta_pct": 100.0
-      },
-      {
-        "slug": "santiago",
-        "actual": 2,
-        "anterior": 0,
-        "delta_abs": 2,
-        "delta_pct": 100.0
-      },
       {
         "slug": "atenas",
         "actual": 2,
@@ -577,7 +563,14 @@
         "delta_pct": 100.0
       },
       {
-        "slug": "quito",
+        "slug": "ciudad-del-cabo",
+        "actual": 4,
+        "anterior": 0,
+        "delta_abs": 4,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "santiago",
         "actual": 2,
         "anterior": 0,
         "delta_abs": 2,
@@ -589,28 +582,35 @@
         "anterior": 0,
         "delta_abs": 2,
         "delta_pct": 100.0
+      },
+      {
+        "slug": "lisboa",
+        "actual": 2,
+        "anterior": 1,
+        "delta_abs": 1,
+        "delta_pct": 100.0
       }
     ],
     "trending_down": [
-      {
-        "slug": "punta-cana",
-        "actual": 0,
-        "anterior": 2,
-        "delta_abs": -2,
-        "delta_pct": -100.0
-      },
-      {
-        "slug": "ushuaia",
-        "actual": 0,
-        "anterior": 2,
-        "delta_abs": -2,
-        "delta_pct": -100.0
-      },
       {
         "slug": "san-jose-costa-rica",
         "actual": 0,
         "anterior": 6,
         "delta_abs": -6,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "madrid",
+        "actual": 0,
+        "anterior": 9,
+        "delta_abs": -9,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "viedma",
+        "actual": 0,
+        "anterior": 2,
+        "delta_abs": -2,
         "delta_pct": -100.0
       }
     ]
