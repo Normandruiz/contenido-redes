@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T16:19:01.240743+00:00",
+  "generated_at": "2026-10-07T17:03:38.900655+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -53,15 +53,6 @@
       "avg_engagement_time_seconds": 19.4,
       "engagement_rate": 0.661,
       "score_pre_rotation": 0.381,
-      "rotation_penalty": 0,
-      "score": 0.53
-    },
-    {
-      "slug": "roma",
-      "pageviews": 45,
-      "avg_engagement_time_seconds": 27.0,
-      "engagement_rate": 0.623,
-      "score_pre_rotation": 0.382,
       "rotation_penalty": 0,
       "score": 0.53
     },
@@ -127,6 +118,15 @@
       "score_pre_rotation": 0.311,
       "rotation_penalty": 0,
       "score": 0.46
+    },
+    {
+      "slug": "roma",
+      "pageviews": 43,
+      "avg_engagement_time_seconds": 14.0,
+      "engagement_rate": 0.605,
+      "score_pre_rotation": 0.28,
+      "rotation_penalty": 0,
+      "score": 0.43
     },
     {
       "slug": "bariloche",
@@ -431,34 +431,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 2282,
-        "anterior": 6244,
-        "delta_pct": -63.5
+        "actual": 2030,
+        "anterior": 5749,
+        "delta_pct": -64.7
       },
       "sessions": {
-        "actual": 1762,
-        "anterior": 3718,
-        "delta_pct": -52.6
+        "actual": 1538,
+        "anterior": 3676,
+        "delta_pct": -58.2
       },
       "avg_engagement_time": {
-        "actual": 29.5,
-        "anterior": 20.8,
-        "delta_pct": 42.1
+        "actual": 30.9,
+        "anterior": 21.9,
+        "delta_pct": 41.0
       },
       "engagement_rate": {
-        "actual": 0.508,
-        "anterior": 0.632,
-        "delta_pct": -19.6
+        "actual": 0.518,
+        "anterior": 0.596,
+        "delta_pct": -13.0
       },
       "conversions": {
         "actual": 0,
-        "anterior": 115,
+        "anterior": 105,
         "delta_pct": -100.0
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-09-07",
         "2026-09-08",
         "2026-09-09",
         "2026-09-10",
@@ -487,10 +486,10 @@
         "2026-10-03",
         "2026-10-04",
         "2026-10-05",
-        "2026-10-06"
+        "2026-10-06",
+        "2026-10-07"
       ],
       "pageviews": [
-        2582,
         856,
         849,
         656,
@@ -519,10 +518,10 @@
         114,
         123,
         153,
-        28
+        91,
+        39
       ],
       "sessions": [
-        468,
         370,
         340,
         290,
@@ -551,22 +550,30 @@
         65,
         93,
         103,
-        23
+        67,
+        30
       ]
     },
     "trending_up": [
       {
-        "slug": "atenas",
-        "actual": 2,
+        "slug": "toronto",
+        "actual": 3,
         "anterior": 1,
-        "delta_abs": 1,
-        "delta_pct": 100.0
+        "delta_abs": 2,
+        "delta_pct": 200.0
       },
       {
         "slug": "ciudad-del-cabo",
         "actual": 4,
         "anterior": 0,
         "delta_abs": 4,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "quito",
+        "actual": 2,
+        "anterior": 0,
+        "delta_abs": 2,
         "delta_pct": 100.0
       },
       {
@@ -577,14 +584,7 @@
         "delta_pct": 100.0
       },
       {
-        "slug": "edimburgo",
-        "actual": 2,
-        "anterior": 0,
-        "delta_abs": 2,
-        "delta_pct": 100.0
-      },
-      {
-        "slug": "lisboa",
+        "slug": "barcelona",
         "actual": 2,
         "anterior": 1,
         "delta_abs": 1,
@@ -593,24 +593,24 @@
     ],
     "trending_down": [
       {
-        "slug": "san-jose-costa-rica",
-        "actual": 0,
-        "anterior": 6,
-        "delta_abs": -6,
-        "delta_pct": -100.0
-      },
-      {
-        "slug": "madrid",
-        "actual": 0,
-        "anterior": 9,
-        "delta_abs": -9,
-        "delta_pct": -100.0
-      },
-      {
         "slug": "viedma",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "nueva-york",
+        "actual": 0,
+        "anterior": 3,
+        "delta_abs": -3,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "dubrovnik",
+        "actual": 0,
+        "anterior": 3,
+        "delta_abs": -3,
         "delta_pct": -100.0
       }
     ]
