@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T16:39:37.454161+00:00",
+  "generated_at": "2026-10-20T14:32:00.570033+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -40,10 +40,10 @@
     },
     {
       "slug": "cancun",
-      "pageviews": 65,
-      "avg_engagement_time_seconds": 18.0,
-      "engagement_rate": 0.681,
-      "score_pre_rotation": 0.387,
+      "pageviews": 64,
+      "avg_engagement_time_seconds": 18.2,
+      "engagement_rate": 0.696,
+      "score_pre_rotation": 0.388,
       "rotation_penalty": 0,
       "score": 0.54
     },
@@ -91,15 +91,6 @@
       "score_pre_rotation": 0.334,
       "rotation_penalty": 0,
       "score": 0.48
-    },
-    {
-      "slug": "las-vegas",
-      "pageviews": 3,
-      "avg_engagement_time_seconds": 32.3,
-      "engagement_rate": 0.5,
-      "score_pre_rotation": 0.321,
-      "rotation_penalty": 0,
-      "score": 0.47
     },
     {
       "slug": "rio-de-janeiro",
@@ -440,34 +431,33 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 1453,
-        "anterior": 2553,
-        "delta_pct": -43.1
+        "actual": 1529,
+        "anterior": 2345,
+        "delta_pct": -34.8
       },
       "sessions": {
-        "actual": 1031,
-        "anterior": 2013,
-        "delta_pct": -48.8
+        "actual": 1100,
+        "anterior": 1806,
+        "delta_pct": -39.1
       },
       "avg_engagement_time": {
-        "actual": 29.5,
-        "anterior": 28.4,
-        "delta_pct": 3.7
+        "actual": 29.2,
+        "anterior": 29.5,
+        "delta_pct": -1.3
       },
       "engagement_rate": {
-        "actual": 0.571,
-        "anterior": 0.539,
-        "delta_pct": 6.0
+        "actual": 0.542,
+        "anterior": 0.55,
+        "delta_pct": -1.4
       },
       "conversions": {
         "actual": 0,
-        "anterior": 11,
-        "delta_pct": -100.0
+        "anterior": 0,
+        "delta_pct": null
       }
     },
     "sparkline": {
       "fechas": [
-        "2026-09-20",
         "2026-09-21",
         "2026-09-22",
         "2026-09-23",
@@ -496,10 +486,10 @@
         "2026-10-16",
         "2026-10-17",
         "2026-10-18",
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-20"
       ],
       "pageviews": [
-        332,
         515,
         299,
         354,
@@ -528,10 +518,10 @@
         151,
         136,
         192,
-        8
+        150,
+        25
       ],
       "sessions": [
-        264,
         369,
         274,
         298,
@@ -560,7 +550,8 @@
         90,
         115,
         169,
-        8
+        124,
+        20
       ]
     },
     "trending_up": [
@@ -581,22 +572,22 @@
       {
         "slug": "berlin",
         "actual": 2,
-        "anterior": 1,
-        "delta_abs": 1,
+        "anterior": 0,
+        "delta_abs": 2,
         "delta_pct": 100.0
       },
       {
         "slug": "ciudad-del-cabo",
         "actual": 2,
-        "anterior": 3,
-        "delta_abs": -1,
-        "delta_pct": -33.3
-      },
-      {
-        "slug": "amsterdam",
-        "actual": 2,
         "anterior": 4,
         "delta_abs": -2,
+        "delta_pct": -50.0
+      },
+      {
+        "slug": "edimburgo",
+        "actual": 1,
+        "anterior": 2,
+        "delta_abs": -1,
         "delta_pct": -50.0
       }
     ],
@@ -609,17 +600,17 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "lisboa",
+        "slug": "atenas",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
         "delta_pct": -100.0
       },
       {
-        "slug": "los-angeles",
+        "slug": "la-habana",
         "actual": 0,
-        "anterior": 2,
-        "delta_abs": -2,
+        "anterior": 4,
+        "delta_abs": -4,
         "delta_pct": -100.0
       }
     ]
