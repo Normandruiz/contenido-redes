@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T14:42:51.964972+00:00",
+  "generated_at": "2026-10-23T14:29:29.599660+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -431,24 +431,24 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 1674,
-        "anterior": 1937,
-        "delta_pct": -13.6
+        "actual": 1855,
+        "anterior": 1816,
+        "delta_pct": 2.1
       },
       "sessions": {
-        "actual": 1253,
-        "anterior": 1408,
-        "delta_pct": -11.0
+        "actual": 1400,
+        "anterior": 1316,
+        "delta_pct": 6.4
       },
       "avg_engagement_time": {
-        "actual": 27.9,
-        "anterior": 30.5,
-        "delta_pct": -8.5
+        "actual": 26.4,
+        "anterior": 31.3,
+        "delta_pct": -15.6
       },
       "engagement_rate": {
-        "actual": 0.529,
-        "anterior": 0.561,
-        "delta_pct": -5.7
+        "actual": 0.515,
+        "anterior": 0.576,
+        "delta_pct": -10.5
       },
       "conversions": {
         "actual": 0,
@@ -458,7 +458,6 @@
     },
     "sparkline": {
       "fechas": [
-        "2026-09-23",
         "2026-09-24",
         "2026-09-25",
         "2026-09-26",
@@ -487,10 +486,10 @@
         "2026-10-19",
         "2026-10-20",
         "2026-10-21",
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
       "pageviews": [
-        354,
         264,
         171,
         150,
@@ -519,10 +518,10 @@
         150,
         98,
         238,
-        44
+        241,
+        34
       ],
       "sessions": [
-        298,
         240,
         131,
         122,
@@ -551,7 +550,8 @@
         124,
         86,
         189,
-        38
+        201,
+        23
       ]
     },
     "trending_up": [
@@ -563,17 +563,17 @@
         "delta_pct": 200.0
       },
       {
-        "slug": "berlin",
-        "actual": 2,
-        "anterior": 0,
-        "delta_abs": 2,
-        "delta_pct": 100.0
-      },
-      {
         "slug": "bali",
         "actual": 4,
         "anterior": 0,
         "delta_abs": 4,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "berlin",
+        "actual": 2,
+        "anterior": 0,
+        "delta_abs": 2,
         "delta_pct": 100.0
       },
       {
@@ -593,13 +593,6 @@
     ],
     "trending_down": [
       {
-        "slug": "atenas",
-        "actual": 0,
-        "anterior": 2,
-        "delta_abs": -2,
-        "delta_pct": -100.0
-      },
-      {
         "slug": "dubai",
         "actual": 0,
         "anterior": 2,
@@ -611,6 +604,13 @@
         "actual": 0,
         "anterior": 4,
         "delta_abs": -4,
+        "delta_pct": -100.0
+      },
+      {
+        "slug": "atenas",
+        "actual": 0,
+        "anterior": 2,
+        "delta_abs": -2,
         "delta_pct": -100.0
       }
     ]
