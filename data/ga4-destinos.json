@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T16:28:59.562237+00:00",
+  "generated_at": "2026-11-02T19:51:15.812212+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -179,15 +179,6 @@
       "avg_engagement_time_seconds": 11.4,
       "engagement_rate": 0.762,
       "score_pre_rotation": 0.214,
-      "rotation_penalty": 0,
-      "score": 0.36
-    },
-    {
-      "slug": "aruba",
-      "pageviews": 3,
-      "avg_engagement_time_seconds": 18.0,
-      "engagement_rate": 0.5,
-      "score_pre_rotation": 0.211,
       "rotation_penalty": 0,
       "score": 0.36
     },
@@ -390,15 +381,6 @@
       "score": 0.24
     },
     {
-      "slug": "sao-paulo",
-      "pageviews": 3,
-      "avg_engagement_time_seconds": 4.7,
-      "engagement_rate": 0.333,
-      "score_pre_rotation": 0.091,
-      "rotation_penalty": 0,
-      "score": 0.24
-    },
-    {
       "slug": "natal",
       "pageviews": 3,
       "avg_engagement_time_seconds": 0.0,
@@ -440,24 +422,24 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 2526,
-        "anterior": 1598,
-        "delta_pct": 58.1
+        "actual": 2480,
+        "anterior": 1595,
+        "delta_pct": 55.5
       },
       "sessions": {
-        "actual": 2095,
-        "anterior": 1126,
-        "delta_pct": 86.1
+        "actual": 2053,
+        "anterior": 1147,
+        "delta_pct": 79.0
       },
       "avg_engagement_time": {
-        "actual": 18.9,
-        "anterior": 29.3,
-        "delta_pct": -35.3
+        "actual": 19.7,
+        "anterior": 29.5,
+        "delta_pct": -33.2
       },
       "engagement_rate": {
-        "actual": 0.454,
-        "anterior": 0.568,
-        "delta_pct": -20.0
+        "actual": 0.464,
+        "anterior": 0.563,
+        "delta_pct": -17.5
       },
       "conversions": {
         "actual": 0,
@@ -467,7 +449,6 @@
     },
     "sparkline": {
       "fechas": [
-        "2026-10-03",
         "2026-10-04",
         "2026-10-05",
         "2026-10-06",
@@ -496,10 +477,10 @@
         "2026-10-29",
         "2026-10-30",
         "2026-10-31",
-        "2026-11-01"
+        "2026-11-01",
+        "2026-11-02"
       ],
       "pageviews": [
-        114,
         123,
         153,
         91,
@@ -528,10 +509,10 @@
         157,
         187,
         168,
-        17
+        87,
+        34
       ],
       "sessions": [
-        65,
         93,
         103,
         67,
@@ -560,12 +541,13 @@
         135,
         164,
         142,
-        16
+        71,
+        27
       ]
     },
     "trending_up": [
       {
-        "slug": "toronto",
+        "slug": "cancun",
         "actual": 2,
         "anterior": 1,
         "delta_abs": 1,
@@ -579,13 +561,6 @@
         "delta_pct": 100.0
       },
       {
-        "slug": "miami",
-        "actual": 2,
-        "anterior": 1,
-        "delta_abs": 1,
-        "delta_pct": 100.0
-      },
-      {
         "slug": "florencia",
         "actual": 2,
         "anterior": 0,
@@ -593,7 +568,14 @@
         "delta_pct": 100.0
       },
       {
-        "slug": "cancun",
+        "slug": "bali",
+        "actual": 6,
+        "anterior": 3,
+        "delta_abs": 3,
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "hong-kong",
         "actual": 2,
         "anterior": 1,
         "delta_abs": 1,
@@ -602,14 +584,14 @@
     ],
     "trending_down": [
       {
-        "slug": "berlin",
+        "slug": "ciudad-del-cabo",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
         "delta_pct": -100.0
       },
       {
-        "slug": "ciudad-del-cabo",
+        "slug": "berlin",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
