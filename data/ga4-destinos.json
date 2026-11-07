@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T16:58:36.243027+00:00",
+  "generated_at": "2026-11-07T15:57:00.749152+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -210,15 +210,6 @@
       "score": 0.34
     },
     {
-      "slug": "ushuaia",
-      "pageviews": 10,
-      "avg_engagement_time_seconds": 5.9,
-      "engagement_rate": 0.75,
-      "score_pre_rotation": 0.182,
-      "rotation_penalty": 0,
-      "score": 0.33
-    },
-    {
       "slug": "edimburgo",
       "pageviews": 5,
       "avg_engagement_time_seconds": 13.0,
@@ -242,6 +233,15 @@
       "avg_engagement_time_seconds": 2.3,
       "engagement_rate": 0.778,
       "score_pre_rotation": 0.157,
+      "rotation_penalty": 0,
+      "score": 0.31
+    },
+    {
+      "slug": "ushuaia",
+      "pageviews": 11,
+      "avg_engagement_time_seconds": 5.4,
+      "engagement_rate": 0.636,
+      "score_pre_rotation": 0.164,
       "rotation_penalty": 0,
       "score": 0.31
     },
@@ -431,24 +431,24 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 2360,
-        "anterior": 1969,
-        "delta_pct": 19.9
+        "actual": 2317,
+        "anterior": 2065,
+        "delta_pct": 12.2
       },
       "sessions": {
-        "actual": 1881,
-        "anterior": 1504,
-        "delta_pct": 25.1
+        "actual": 1831,
+        "anterior": 1603,
+        "delta_pct": 14.2
       },
       "avg_engagement_time": {
-        "actual": 25.9,
-        "anterior": 26.6,
-        "delta_pct": -2.7
+        "actual": 27.5,
+        "anterior": 24.7,
+        "delta_pct": 11.4
       },
       "engagement_rate": {
-        "actual": 0.503,
-        "anterior": 0.525,
-        "delta_pct": -4.1
+        "actual": 0.507,
+        "anterior": 0.515,
+        "delta_pct": -1.4
       },
       "conversions": {
         "actual": 0,
@@ -458,7 +458,6 @@
     },
     "sparkline": {
       "fechas": [
-        "2026-10-08",
         "2026-10-09",
         "2026-10-10",
         "2026-10-11",
@@ -487,10 +486,10 @@
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-07"
       ],
       "pageviews": [
-        91,
         50,
         84,
         120,
@@ -519,10 +518,10 @@
         158,
         185,
         124,
+        137,
         21
       ],
       "sessions": [
-        56,
         39,
         53,
         70,
@@ -551,7 +550,8 @@
         126,
         125,
         111,
-        13
+        104,
+        11
       ]
     },
     "trending_up": [
@@ -563,11 +563,18 @@
         "delta_pct": 200.0
       },
       {
-        "slug": "roma",
-        "actual": 3,
-        "anterior": 1,
+        "slug": "ushuaia",
+        "actual": 2,
+        "anterior": 0,
         "delta_abs": 2,
-        "delta_pct": 200.0
+        "delta_pct": 100.0
+      },
+      {
+        "slug": "cancun",
+        "actual": 2,
+        "anterior": 0,
+        "delta_abs": 2,
+        "delta_pct": 100.0
       },
       {
         "slug": "hong-kong",
@@ -582,18 +589,11 @@
         "anterior": 0,
         "delta_abs": 2,
         "delta_pct": 100.0
-      },
-      {
-        "slug": "cancun",
-        "actual": 2,
-        "anterior": 0,
-        "delta_abs": 2,
-        "delta_pct": 100.0
       }
     ],
     "trending_down": [
       {
-        "slug": "berlin",
+        "slug": "amsterdam",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
@@ -607,7 +607,7 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "amsterdam",
+        "slug": "berlin",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
