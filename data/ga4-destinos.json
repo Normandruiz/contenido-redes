@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T15:57:00.749152+00:00",
+  "generated_at": "2026-11-08T16:24:03.185575+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -76,12 +76,12 @@
     },
     {
       "slug": "rio-de-janeiro",
-      "pageviews": 18,
-      "avg_engagement_time_seconds": 21.6,
-      "engagement_rate": 0.624,
-      "score_pre_rotation": 0.296,
+      "pageviews": 17,
+      "avg_engagement_time_seconds": 22.8,
+      "engagement_rate": 0.667,
+      "score_pre_rotation": 0.308,
       "rotation_penalty": 0,
-      "score": 0.45
+      "score": 0.46
     },
     {
       "slug": "iguazu",
@@ -309,15 +309,6 @@
       "score": 0.28
     },
     {
-      "slug": "viena",
-      "pageviews": 3,
-      "avg_engagement_time_seconds": 2.7,
-      "engagement_rate": 0.667,
-      "score_pre_rotation": 0.127,
-      "rotation_penalty": 0,
-      "score": 0.28
-    },
-    {
       "slug": "florencia",
       "pageviews": 6,
       "avg_engagement_time_seconds": 8.0,
@@ -390,6 +381,15 @@
       "score": 0.24
     },
     {
+      "slug": "viena",
+      "pageviews": 4,
+      "avg_engagement_time_seconds": 2.0,
+      "engagement_rate": 0.375,
+      "score_pre_rotation": 0.081,
+      "rotation_penalty": 0,
+      "score": 0.23
+    },
+    {
       "slug": "natal",
       "pageviews": 3,
       "avg_engagement_time_seconds": 0.0,
@@ -431,24 +431,24 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 2317,
-        "anterior": 2065,
-        "delta_pct": 12.2
+        "actual": 2118,
+        "anterior": 2224,
+        "delta_pct": -4.8
       },
       "sessions": {
-        "actual": 1831,
-        "anterior": 1603,
-        "delta_pct": 14.2
+        "actual": 1664,
+        "anterior": 1767,
+        "delta_pct": -5.8
       },
       "avg_engagement_time": {
-        "actual": 27.5,
-        "anterior": 24.7,
-        "delta_pct": 11.4
+        "actual": 33.8,
+        "anterior": 22.1,
+        "delta_pct": 52.6
       },
       "engagement_rate": {
-        "actual": 0.507,
-        "anterior": 0.515,
-        "delta_pct": -1.4
+        "actual": 0.51,
+        "anterior": 0.504,
+        "delta_pct": 1.2
       },
       "conversions": {
         "actual": 0,
@@ -458,7 +458,6 @@
     },
     "sparkline": {
       "fechas": [
-        "2026-10-09",
         "2026-10-10",
         "2026-10-11",
         "2026-10-12",
@@ -487,10 +486,10 @@
         "2026-11-04",
         "2026-11-05",
         "2026-11-06",
-        "2026-11-07"
+        "2026-11-07",
+        "2026-11-08"
       ],
       "pageviews": [
-        50,
         84,
         120,
         88,
@@ -519,10 +518,10 @@
         185,
         124,
         137,
-        21
+        74,
+        27
       ],
       "sessions": [
-        39,
         53,
         70,
         71,
@@ -551,7 +550,8 @@
         125,
         111,
         104,
-        11
+        56,
+        22
       ]
     },
     "trending_up": [
@@ -563,14 +563,14 @@
         "delta_pct": 200.0
       },
       {
-        "slug": "ushuaia",
+        "slug": "cancun",
         "actual": 2,
         "anterior": 0,
         "delta_abs": 2,
         "delta_pct": 100.0
       },
       {
-        "slug": "cancun",
+        "slug": "paris",
         "actual": 2,
         "anterior": 0,
         "delta_abs": 2,
@@ -584,7 +584,7 @@
         "delta_pct": 100.0
       },
       {
-        "slug": "paris",
+        "slug": "ushuaia",
         "actual": 2,
         "anterior": 0,
         "delta_abs": 2,
@@ -593,13 +593,6 @@
     ],
     "trending_down": [
       {
-        "slug": "amsterdam",
-        "actual": 0,
-        "anterior": 2,
-        "delta_abs": -2,
-        "delta_pct": -100.0
-      },
-      {
         "slug": "toronto",
         "actual": 0,
         "anterior": 2,
@@ -607,11 +600,18 @@
         "delta_pct": -100.0
       },
       {
-        "slug": "berlin",
+        "slug": "salta",
         "actual": 0,
         "anterior": 2,
         "delta_abs": -2,
         "delta_pct": -100.0
+      },
+      {
+        "slug": "rio-de-janeiro",
+        "actual": 1,
+        "anterior": 9,
+        "delta_abs": -8,
+        "delta_pct": -88.9
       }
     ]
   }
