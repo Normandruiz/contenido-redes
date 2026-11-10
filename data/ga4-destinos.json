@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T20:13:12.035860+00:00",
+  "generated_at": "2026-11-10T17:19:58.638041+00:00",
   "period_days": 90,
   "property_id": "528481749",
   "is_mock": false,
@@ -210,6 +210,15 @@
       "score": 0.34
     },
     {
+      "slug": "berlin",
+      "pageviews": 5,
+      "avg_engagement_time_seconds": 11.6,
+      "engagement_rate": 0.6,
+      "score_pre_rotation": 0.186,
+      "rotation_penalty": 0,
+      "score": 0.34
+    },
+    {
       "slug": "edimburgo",
       "pageviews": 5,
       "avg_engagement_time_seconds": 13.0,
@@ -244,15 +253,6 @@
       "score_pre_rotation": 0.164,
       "rotation_penalty": 0,
       "score": 0.31
-    },
-    {
-      "slug": "berlin",
-      "pageviews": 6,
-      "avg_engagement_time_seconds": 9.7,
-      "engagement_rate": 0.444,
-      "score_pre_rotation": 0.152,
-      "rotation_penalty": 0,
-      "score": 0.3
     },
     {
       "slug": "bali",
@@ -431,24 +431,24 @@
     "sparkline_days": 30,
     "kpis": {
       "pageviews": {
-        "actual": 1981,
-        "anterior": 2366,
-        "delta_pct": -16.3
+        "actual": 1824,
+        "anterior": 2535,
+        "delta_pct": -28.0
       },
       "sessions": {
-        "actual": 1550,
-        "anterior": 1880,
-        "delta_pct": -17.6
+        "actual": 1438,
+        "anterior": 2008,
+        "delta_pct": -28.4
       },
       "avg_engagement_time": {
-        "actual": 34.6,
-        "anterior": 22.5,
-        "delta_pct": 53.8
+        "actual": 36.6,
+        "anterior": 21.6,
+        "delta_pct": 69.5
       },
       "engagement_rate": {
         "actual": 0.53,
-        "anterior": 0.496,
-        "delta_pct": 6.9
+        "anterior": 0.493,
+        "delta_pct": 7.5
       },
       "conversions": {
         "actual": 0,
@@ -458,7 +458,6 @@
     },
     "sparkline": {
       "fechas": [
-        "2026-10-11",
         "2026-10-12",
         "2026-10-13",
         "2026-10-14",
@@ -487,10 +486,10 @@
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
-        "2026-11-09"
+        "2026-11-09",
+        "2026-11-10"
       ],
       "pageviews": [
-        120,
         88,
         82,
         151,
@@ -519,10 +518,10 @@
         137,
         74,
         87,
-        33
+        112,
+        15
       ],
       "sessions": [
-        70,
         71,
         60,
         81,
@@ -551,31 +550,11 @@
         104,
         56,
         63,
-        29
+        91,
+        14
       ]
     },
     "trending_up": [
-      {
-        "slug": "miami",
-        "actual": 3,
-        "anterior": 1,
-        "delta_abs": 2,
-        "delta_pct": 200.0
-      },
-      {
-        "slug": "cancun",
-        "actual": 2,
-        "anterior": 1,
-        "delta_abs": 1,
-        "delta_pct": 100.0
-      },
-      {
-        "slug": "hong-kong",
-        "actual": 2,
-        "anterior": 0,
-        "delta_abs": 2,
-        "delta_pct": 100.0
-      },
       {
         "slug": "ushuaia",
         "actual": 2,
@@ -584,11 +563,32 @@
         "delta_pct": 100.0
       },
       {
+        "slug": "miami",
+        "actual": 2,
+        "anterior": 1,
+        "delta_abs": 1,
+        "delta_pct": 100.0
+      },
+      {
         "slug": "paris",
         "actual": 2,
         "anterior": 0,
         "delta_abs": 2,
         "delta_pct": 100.0
+      },
+      {
+        "slug": "hong-kong",
+        "actual": 2,
+        "anterior": 2,
+        "delta_abs": 0,
+        "delta_pct": 0.0
+      },
+      {
+        "slug": "roma",
+        "actual": 2,
+        "anterior": 2,
+        "delta_abs": 0,
+        "delta_pct": 0.0
       }
     ],
     "trending_down": [
@@ -602,9 +602,9 @@
       {
         "slug": "rio-de-janeiro",
         "actual": 1,
-        "anterior": 9,
-        "delta_abs": -8,
-        "delta_pct": -88.9
+        "anterior": 3,
+        "delta_abs": -2,
+        "delta_pct": -66.7
       },
       {
         "slug": "bali",
